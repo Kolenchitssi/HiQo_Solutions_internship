@@ -1,0 +1,2 @@
+# HiQo_Solutions_internship
+Internship assignments

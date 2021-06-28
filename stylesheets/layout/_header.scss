@@ -1,3 +1,65 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+.header{
+min-height: 496px;
+display: flex;
+justify-content: space-between;
+margin-bottom: 133px;
+}
+
+h1{
+  padding-top: 84px;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 54px;
+  color: $colorText;
+}
+
+.header__left {
+  max-width: 521px;
+  text-align: left;
+  padding-right: 521px-459px;
+
+    p{
+      color: $colorLitllText; 
+      padding-bottom: 36px;     
+    }   
+}
+
+.header__left-play{
+  margin-left: 30px;
+}
+
+.watch-video{
+  margin-left: 9px;
+  font-weight: 600;
+  font-size: 16px;
+  
+}
+
+.header__left-buttons{
+  height: 53px;
+  
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  .button{
+    width: 175px;
+    height: 53px;
+      }
+}
+
+.header__left-play a{
+  color: $colorButton;
+}
+
+.header__right {
+  max-width: 605px;
+  img{
+    object-fit: scale-down;
+    position: relative;
+    top: 30px;
+  }
+}

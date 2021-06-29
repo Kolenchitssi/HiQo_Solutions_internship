@@ -873,7 +873,7 @@ h4.title--up {
   line-height: 35px;
 }
 .footer__nav .nav__title {
-  font-family: Avenir, Poppins;
+  font-family: Avenir;
   font-style: normal;
   font-weight: 900;
   font-size: 20px;
@@ -885,17 +885,17 @@ h4.title--up {
 }
 
 .input__title {
-  font-family: Avenir, Poppins;
+  font-family: Avenir;
   font-style: normal;
   font-weight: 900;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 30px;
   color: #2F281E;
 }
 
 .telephone {
   color: #BCD0E5;
-  font-family: Avenir, Poppins;
+  font-family: Avenir;
   font-style: normal;
   font-weight: 900;
   font-size: 16px;

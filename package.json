@@ -1,18 +1,19 @@
 {
   "name": "hiqo_solutions_internship",
+  "description": "Internship assignments",
   "version": "1.0.0",
-  "description": "site productly internship assignments",
-  "main": "index.html",
+  "main": "gulpfile.js",
   "scripts": {
-    "scss": "gulp sass"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "gulp sass",
+    "watch": "gulp sass:watch"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Kolenchitssi/HiQo_Solutions_internship.git"
   },
   "keywords": [
-    "site",
-    "internship"
+    "site"
   ],
   "author": "KolenchitsSI",
   "license": "ISC",
@@ -24,6 +25,7 @@
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^5.0.0",
-    "node-sass": "^6.0.1"
+    "node-sass": "^6.0.1",
+    "sass": "^1.35.1"
   }
 }

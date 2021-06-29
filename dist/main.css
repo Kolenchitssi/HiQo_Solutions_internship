@@ -825,3 +825,21 @@ h4.title--up {
 .title-article__text.active-ticket {
   color: #ff9900;
 }
+
+.points {
+  width: 68px;
+  height: 16px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.point {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background-color: #979797;
+}
+.point.activepoint {
+  background-color: #ff9900;
+}

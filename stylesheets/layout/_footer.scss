@@ -8,11 +8,11 @@
 
 .footer__wraper{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
 }
 
 .footer__logo{
-    max-width: 205;
+    max-width: 205px;      
 }
 
 .footer__nav{
@@ -27,7 +27,7 @@
         line-height: 35px;
     }
     .nav__title{
-        font-family: Avenir;
+        font-family: Avenir, Poppins;
         font-style: normal;
         font-weight: 900;
         font-size: 20px;
@@ -39,9 +39,18 @@
     }
 }
 
+.input__title{
+    font-family: Avenir, Poppins;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 24px;
+    color: $colorText;
+}
+
 .telephone {
     color:#BCD0E5;
-    font-family: Avenir;
+    font-family: Avenir, Poppins;
     font-style: normal;
     font-weight: 900;
     font-size: 16px;

@@ -262,6 +262,7 @@ h4.title--up {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 120px;
 
 }
 
@@ -269,8 +270,8 @@ h4.title--up {
     height: 16px;
     width: 16px;
     border-radius: 50%;
-    background-color: #979797;
-    // border: 1px solid $colorText;
+    background-color: #979797;   
+    
     &.activepoint {
         background-color: $colorButton;
     }

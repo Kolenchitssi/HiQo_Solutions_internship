@@ -23,7 +23,13 @@ h1{
 
     p{
       color: $colorLitllText; 
-      padding-bottom: 36px;     
+      padding-bottom: 36px; 
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 28px;
+      max-width: 450px;    
     }   
 }
 

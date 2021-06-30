@@ -399,7 +399,7 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   font-family: 'Poppins', sans-serif;
-  background-color: #F2F2F2; }
+  background-color: #FFFFFF; }
 
 .central-wrapper {
   max-width: 1126px;
@@ -500,7 +500,8 @@ h1 {
     font-weight: normal;
     font-size: 18px;
     line-height: 28px;
-    max-width: 450px; }
+    max-width: 450px;
+    margin-bottom: 22px; }
 
 .header__left-play {
   margin-left: 30px; }
@@ -561,7 +562,7 @@ h1 {
     font-weight: 600;
     font-size: 22px;
     line-height: 33px;
-    margin-bottom: 12px; }
+    margin-bottom: 15px; }
   .card p {
     font-family: Poppins;
     font-style: normal;
@@ -658,7 +659,7 @@ h4.title--up {
   top: -13px; }
 
 .marketing-strategies {
-  margin-left: 1px; }
+  margin-left: 0; }
 
 .marketing-strategies__title {
   font-family: Poppins;
@@ -680,7 +681,8 @@ h4.title--up {
 
 .marketing-strategies__wrapper {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  max-width: 1108px; }
 
 .marketing-strategies__ticket {
   flex: 0 1 348px;
@@ -742,14 +744,26 @@ h4.title--up {
 
 .footer {
   padding-top: 102px;
+  padding-bottom: 95px;
   border-top: 1px solid #BCD0E5; }
 
 .footer__wraper {
   display: flex;
-  justify-content: space-between; }
+  justify-content: flex-start; }
 
 .footer__logo {
   max-width: 205px; }
+
+.footer__logo-text {
+  padding-top: 5px;
+  padding-left: 5px; }
+
+.footer-first {
+  margin-left: 139px; }
+
+.footer-second {
+  margin-left: 144px;
+  margin-right: 82px; }
 
 .footer__nav {
   max-width: 205px; }
@@ -765,9 +779,14 @@ h4.title--up {
     font-weight: 900;
     font-size: 20px;
     line-height: 30px;
-    color: #2F281E; }
+    color: #2F281E;
+    margin-top: 0;
+    margin-bottom: 35px; }
   .footer__nav a {
     color: #544837; }
+
+.footer__block-input {
+  max-width: 325px; }
 
 .input__title {
   font-family: Avenir;
@@ -775,10 +794,12 @@ h4.title--up {
   font-weight: 900;
   font-size: 20px;
   line-height: 30px;
-  color: #2F281E; }
+  color: #2F281E;
+  margin: 0;
+  max-width: 280px;
+  margin-bottom: 32px; }
 
 .telephone {
-  color: #BCD0E5;
   font-family: Avenir;
   font-style: normal;
   font-weight: 900;
@@ -786,7 +807,22 @@ h4.title--up {
   line-height: 28px;
   margin-bottom: 21px;
   border-radius: 4px;
-  border: 1px solid  #BCD0E5; }
+  border: 1px solid  #BCD0E5;
+  width: 325px;
+  height: 48px;
+  padding: 15px;
+  color: #BCD0E5; }
+  .telephone::placeholder {
+    color: #BCD0E5;
+    opacity: 1; }
 
-.footer__nav.nav__button-sign-up {
-  width: 131px; }
+.footer__button-sign-up {
+  width: 131px;
+  height: 39px; }
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("Avenir-Black.eot");
+  src: local("Avenir Black"), local("Avenir-Black"), url("../../assets/fonts/Avenir-Black.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Avenir-Black.woff2") format("woff2"), url("../../assets/fonts/Avenir-Black.woff") format("woff"), url("../../assets/fonts/Avenir-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }

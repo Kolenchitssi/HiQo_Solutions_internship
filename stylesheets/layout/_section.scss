@@ -35,7 +35,7 @@
         font-weight: 600;
         font-size: 22px;
         line-height: 33px;
-        margin-bottom: 12px;        
+        margin-bottom: 15px;        
     }
 
     p {
@@ -107,10 +107,6 @@
         }                        
     }
 
-
-
-
-
     ul {
         margin: 0;
         padding: 10px 0 0;
@@ -178,7 +174,7 @@ h4.title--up {
 
 //section Marketing strategies
 .marketing-strategies {    
-    margin-left: 1px;
+    margin-left: 0;
 }
 
 .marketing-strategies__title {
@@ -204,7 +200,8 @@ h4.title--up {
 
 .marketing-strategies__wrapper {
     display: flex; 
-    justify-content: space-between;      
+    justify-content: space-between;
+    max-width: 1108px;      
 }
 
 .marketing-strategies__ticket {

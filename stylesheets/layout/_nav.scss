@@ -1,8 +1,8 @@
 $color-button: #ff9900;
-$colorBackground: #FFFFFF;
-$colorText:#2F281E;
-$colorLittleText: #544837;
-$colorTextFooter: #BCD0E5;
+$color-background: #FFFFFF;
+$color-text:#2F281E;
+$color-little-text: #544837;
+$color-text-footer: #BCD0E5;
 
 body {
   box-sizing: border-box;  
@@ -12,7 +12,7 @@ body {
     max-width: 1400px;
     margin: 0 auto;    
     font-family: 'Poppins', sans-serif;
-    background-color: $colorBackground;
+    background-color: $color-background;
 }
 
 .central-wrapper {

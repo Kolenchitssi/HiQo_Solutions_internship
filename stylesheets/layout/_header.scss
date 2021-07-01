@@ -1,14 +1,14 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
-.header{
+.header {
 min-height: 496px;
 display: flex;
 justify-content: space-between;
 margin-bottom: 133px;
 }
 
-h1{
+h1 {
   padding-top: 84px;
   font-weight: bold;
   font-size: 44px;
@@ -21,7 +21,7 @@ h1{
   text-align: left;
   padding-right: 521px-459px;
 
-    p{
+    p {
       color: $colorLittleText; 
       padding-bottom: 36px; 
       font-family: Poppins;
@@ -34,18 +34,18 @@ h1{
     }   
 }
 
-.header__left-play{
+.header__left-play {
   margin-left: 30px;
 }
 
-.watch-video{
+.watch-video {
   margin-left: 9px;
   font-weight: 600;
   font-size: 16px;
   
 }
 
-.header__left-buttons{
+.header__left-buttons {
   height: 53px;
   
   display: flex;
@@ -58,13 +58,13 @@ h1{
       }
 }
 
-.header__left-play a{
+.header__left-play a {
   color: $colorButton;
 }
 
 .header__right {
   max-width: 605px;
-  img{
+  img {
     object-fit: scale-down;
     position: relative;
     top: 30px;

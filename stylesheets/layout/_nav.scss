@@ -1,9 +1,3 @@
-$color-button: #ff9900;
-$color-background: #FFFFFF;
-$color-text:#2F281E;
-$color-little-text: #544837;
-$color-text-footer: #BCD0E5;
-
 body {
   box-sizing: border-box;  
 }
@@ -11,7 +5,7 @@ body {
 .wrapper {
     max-width: 1400px;
     margin: 0 auto;    
-    font-family: 'Poppins', sans-serif;
+    font-family: $font-family-basic;
     background-color: $color-background;
 }
 
@@ -52,7 +46,7 @@ min-height: 78px;
     
 
     li {
-        font-family: Poppins;
+        font-family: $font-family-basic;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -60,7 +54,7 @@ min-height: 78px;
         padding-right: 27px;
 
         a {
-            color: #2F281E;
+            color: $color-text;
         }
     }
 }
@@ -70,12 +64,13 @@ min-height: 78px;
   height: 46px;
   margin-left: 14px;
   margin-right: 14px;
-  font-family: Poppins;
+  font-family: $font-family-basic;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;  
-  color: #173A56;
-  border: 1px solid #BCD0E5
+  color: $color-btn-sign-in;
+  background-color: $color-background;
+  border: 1px solid $color-btn-sign-in-border;   
 }
 
 .nav__button-sign-up {
@@ -97,12 +92,12 @@ min-height: 78px;
 }
 
 .button--yellow {
-  font-family: Poppins;
+  font-family: $font-family-basic;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
-  color: #FFFFFF;  
+  color: $color-button-text;  
   background: $color-button;
   border-color: $color-button;
 }

@@ -3,7 +3,7 @@
     margin: 0 auto;
 
     h2 {
-        font-family: Poppins;
+        font-family: $font-family-basic;
         font-style: normal;
         font-weight: bold;
         font-size: 36px;
@@ -31,7 +31,7 @@
     max-width: 240px;
 
     h3 {
-        font-family: Poppins;
+        font-family: $font-family-basic;
         font-style: normal;
         font-weight: 600;
         font-size: 22px;
@@ -41,7 +41,7 @@
     }
 
     p {
-        font-family: Poppins;
+        font-family: $font-family-basic;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -119,7 +119,7 @@
         list-style: none;
         background: url("../../assets/icons/li-style.svg") no-repeat 0 48%;
         padding: 17px 0 17px 65px;
-        font-family: Poppins;
+        font-family: $font-family-basic;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -171,7 +171,7 @@ h4.title--up {
 }
 
 .marketing-strategies__title {
-    font-family: Poppins;
+    font-family: $font-family-basic;
     font-style: normal;
     font-weight: bold;
     font-size: 34px;
@@ -181,7 +181,7 @@ h4.title--up {
 }
 
 .marketing-strategies__text {
-    font-family: Poppins;
+    font-family: $font-family-basic;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -209,7 +209,7 @@ h4.title--up {
 
 .autor-article {
     display: flex;
-    font-family: Poppins;
+    font-family: $font-family-basic;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -243,7 +243,7 @@ h4.title--up {
 }
 
 .title-article__text {
-    font-family: Poppins;
+    font-family: $font-family-basic;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -273,7 +273,7 @@ h4.title--up {
     height: 16px;
     width: 16px;
     border-radius: 50%;
-    background-color: #979797;   
+    background-color: $color-point;   
     
     &.activepoint {
         background-color: $color-button;

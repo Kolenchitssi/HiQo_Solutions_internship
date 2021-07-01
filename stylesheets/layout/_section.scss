@@ -262,14 +262,17 @@ h4.title--up {
     height: 16px;
     margin: 0 auto;
     display: flex;
+    flex: 0 0 16px;
     justify-content: space-between;
     padding-top: 45px;
+    padding-left: 0;
     padding-bottom: 135px;
     position: relative;
     right: 10px;
 }
 
 .point {
+    list-style: none;    
     height: 16px;
     width: 16px;
     border-radius: 50%;

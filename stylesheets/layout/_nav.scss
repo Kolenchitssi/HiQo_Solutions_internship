@@ -1,18 +1,12 @@
-$colorButton: #ff9900;
-$colorBackground: #F2F2F2;
-$colorText:#2F281E;
-$colorLitllText: #544837;
-
-body{
-  box-sizing: border-box;
-  // background-color: #ddd;
+body {
+  box-sizing: border-box;  
 }
 
 .wrapper {
     max-width: 1400px;
     margin: 0 auto;    
-    font-family: 'Poppins', sans-serif;
-    background-color: $colorBackground;
+    font-family: $font-family-basic;
+    background-color: $color-background;
 }
 
 .central-wrapper {
@@ -36,13 +30,13 @@ min-height: 78px;
     
 }
 
-.logo-text{
+.logo-text {
     margin-right: 280px;
     max-width: 143px;
     max-height: 29px;
 }
 
-.nav__links{
+.nav__links {
     display: flex;
     flex-direction: row;
     text-decoration: none;
@@ -51,15 +45,16 @@ min-height: 78px;
     
     
 
-    li{
-        font-family: Poppins;
+    li {
+        font-family: $font-family-basic;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
         line-height: 28px;        
         padding-right: 27px;
-        a{
-            color: #2F281E;
+
+        a {
+            color: $color-text;
         }
     }
 }
@@ -69,16 +64,16 @@ min-height: 78px;
   height: 46px;
   margin-left: 14px;
   margin-right: 14px;
-  font-family: Poppins;
+  font-family: $font-family-basic;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
-  
-  color: #173A56;
-  border: 1px solid #BCD0E5
+  font-size: 16px;  
+  color: $color-btn-sign-in;
+  background-color: $color-background;
+  border: 1px solid $color-btn-sign-in-border;   
 }
 
-.nav__button-sign-up{
+.nav__button-sign-up {
   width: 110px;
   height: 46px;
 }
@@ -91,17 +86,18 @@ min-height: 78px;
   border-radius: 4px;  
 }
 
-.button:hover{
+.button:hover {
   cursor: pointer;
   filter: opacity(0.8);
 }
 
-.button--yellow{
-  font-family: Poppins;
+.button--yellow {
+  font-family: $font-family-basic;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
-  color: #FFFFFF;
-  background: $colorButton;
+  color: $color-button-text;  
+  background: $color-button;
+  border-color: $color-button;
 }

@@ -1,22 +1,23 @@
 .design-tools__title {
     max-width: 539px;
     margin: 0 auto;
+
     h2 {
-        font-family: Poppins;
+        font-family: $font-family-basic;
         font-style: normal;
         font-weight: bold;
         font-size: 36px;
         line-height: 54px;
         text-align: center;
-        color: $colorText;
+        color: $color-text;
         padding-bottom: 25px;
     }
 }
+
 .design-tools {    
     background:  linear-gradient(179.59deg, rgba(255, 244, 229, 0.0001)  0.33%,  rgba(255, 229, 210, 0.629261) 99.67%);
     border-radius:  0 0 50% 50%;
-    min-height: 389px;
-    
+    min-height: 389px;    
 }
 
 .design-tools__wrapper {
@@ -30,26 +31,27 @@
     max-width: 240px;
 
     h3 {
-        font-family: Poppins;
+        font-family: $font-family-basic;
         font-style: normal;
         font-weight: 600;
         font-size: 22px;
         line-height: 33px;
-        margin-bottom: 12px;        
+        margin-bottom: 15px;
+        margin-top: 26px;        
     }
 
     p {
-        font-family: Poppins;
+        font-family: $font-family-basic;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 26px;
-        color: $colorLitllText;
+        color: $color-little-text;
         margin-top: 0;       
     }
 }
 
-.sign-up{
+.sign-up {
     text-transform: uppercase;
     width: 175px;
     height: 53px;  
@@ -67,10 +69,10 @@
     padding-top: 111px;
     padding-bottom: 7px;
 
-    &.third{        
-        padding-top: 79px;
+    &.third {        
+        padding-top: 84px;
         margin-left: 2px;
-        margin-bottom: 994px;
+        margin-bottom: 998px;
     }
 }
 
@@ -84,15 +86,15 @@
         font-size: 16px;
         line-height: 26px;
         margin: 0;
-        color: $colorLitllText;
+        color: $color-little-text;
     }
 
     h2 {
-        margin: 3px 0 22px;        
+        margin: 4px 0 22px;        
         font-weight: bold;
         font-size: 36px;
         line-height: 54px;
-        color: $colorText;
+        color: $color-text;
     }
 
     h4 {
@@ -107,26 +109,22 @@
         }                        
     }
 
-
-
-
-
     ul {
         margin: 0;
-        padding: 10px 0 0;
+        padding: 14px 0 0;
         max-width: 450px;
     }
 
     li {
         list-style: none;
-        background: url("../../assets/icons/li-style.svg") no-repeat 0 50%;
+        background: url("../../assets/icons/li-style.svg") no-repeat 0 48%;
         padding: 17px 0 17px 65px;
-        font-family: Poppins;
+        font-family: $font-family-basic;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 26px;
-        color: $colorLitllText;
+        color: $color-little-text;
         vertical-align: top;
         
         &:first-child {
@@ -136,15 +134,6 @@
         &:last-child {
             padding-top: 9px;
         }
-
-//можно сделать маркеры и так:
-        // &::before {
-        //     content: "";
-        //     display: inline-block;
-        //     height: 32px;
-        //     width: 32px;
-        //     background: url("../../assets/icons/li-style.svg") no-repeat 0px 0px;
-        // }
     }
 }
 
@@ -178,33 +167,35 @@ h4.title--up {
 
 //section Marketing strategies
 .marketing-strategies {    
-    margin-left: 1px;
+    margin-left: 0;
 }
 
 .marketing-strategies__title {
-    font-family: Poppins;
+    font-family: $font-family-basic;
     font-style: normal;
     font-weight: bold;
     font-size: 34px;
     line-height: 51px;
-    color: $colorText;
-    margin-bottom: 10px;
-    
+    color: $color-text;
+    margin-bottom: 10px;    
 }
 
 .marketing-strategies__text {
-    font-family: Poppins;
+    font-family: $font-family-basic;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;    
-    color: $colorLitllText;
+    color: $color-little-text;
+    padding-left: 2px;
     margin: 0 0 55px;
 }
 
 .marketing-strategies__wrapper {
     display: flex; 
-    justify-content: space-between;      
+    justify-content: space-between;
+    max-width: 1108px;
+    padding-left: 2px;      
 }
 
 .marketing-strategies__ticket {
@@ -218,64 +209,76 @@ h4.title--up {
 
 .autor-article {
     display: flex;
-    font-family: Poppins;
+    font-family: $font-family-basic;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 28px;
-    color: $colorLitllText;
+    color: $color-little-text;
+    margin-top: 4px;
     margin-bottom: 12px;
 }
 
-.autor-article__name{
-    border-right: 1px solid $colorLitllText;
+.autor-article__name {    
     padding-right: 7px;
+    position: relative;    
+
+    &::after {
+        position: relative;
+        display: inline-block;
+        content: "";
+        top: 2px;
+        height: 16px;
+        width: 8px;               
+        border-right: 2px solid $color-little-text;
+    }
 }
 
 .autor-article__date {
-    padding-left: 7px;
+    padding-left: 4px;
 }
 
 .boldtext{
     font-weight: 700;  
 }
 
-
 .title-article__text {
-    font-family: Poppins;
+    font-family: $font-family-basic;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 34px;
-    color: $colorText;
+    color: $color-text;
     max-width: 294px;
     margin: 0;   
 
     &.active-ticket {
-        color: $colorButton;
+        color: $color-button;
     }
 }
 
-.points{
+.points {
     width: 68px;
     height: 16px;
     margin: 0 auto;
     display: flex;
+    flex: 0 0 16px;
     justify-content: space-between;
     padding-top: 45px;
+    padding-left: 0;
     padding-bottom: 135px;
     position: relative;
     right: 10px;
-
 }
 
-.point{
+.point {
+    list-style: none;    
     height: 16px;
     width: 16px;
     border-radius: 50%;
-    background-color: #979797;   
+    background-color: $color-point;   
     
     &.activepoint {
-        background-color: $colorButton;
+        background-color: $color-button;
     }
 }

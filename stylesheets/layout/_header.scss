@@ -1,19 +1,19 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
-.header{
+.header {
 min-height: 496px;
 display: flex;
 justify-content: space-between;
-margin-bottom: 133px;
+margin-bottom: 136px;
 }
 
-h1{
+h1 {
   padding-top: 84px;
   font-weight: bold;
   font-size: 44px;
   line-height: 54px;
-  color: $colorText;
+  color: $color-text;
 }
 
 .header__left {
@@ -21,32 +21,31 @@ h1{
   text-align: left;
   padding-right: 521px-459px;
 
-    p{
-      color: $colorLitllText; 
+    p {
+      color: $color-little-text; 
       padding-bottom: 36px; 
-      font-family: Poppins;
+      font-family: $font-family-basic;
       font-style: normal;
       font-weight: normal;
       font-size: 18px;
       line-height: 28px;
-      max-width: 450px;    
+      max-width: 450px;
+      margin-bottom: 22px;    
     }   
 }
 
-.header__left-play{
+.header__left-play {
   margin-left: 30px;
 }
 
-.watch-video{
+.watch-video {
   margin-left: 9px;
   font-weight: 600;
-  font-size: 16px;
-  
+  font-size: 16px;  
 }
 
-.header__left-buttons{
-  height: 53px;
-  
+.header__left-buttons {
+  height: 53px;  
   display: flex;
   justify-content: left;
   align-items: center;
@@ -54,16 +53,16 @@ h1{
   .button{
     width: 175px;
     height: 53px;
-      }
+  }
 }
 
-.header__left-play a{
-  color: $colorButton;
+.header__left-play a {
+  color: $color-button;
 }
 
 .header__right {
   max-width: 605px;
-  img{
+  img {
     object-fit: scale-down;
     position: relative;
     top: 30px;

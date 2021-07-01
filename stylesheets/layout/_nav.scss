@@ -20,6 +20,7 @@ display: flex;
 flex-direction: row;
 justify-content: flex-start;
 align-items: center;
+margin-top: 20px;
 min-height: 78px;
 }
 
@@ -100,4 +101,5 @@ min-height: 78px;
   color: $color-button-text;  
   background: $color-button;
   border-color: $color-button;
+  border-style: solid;
 }

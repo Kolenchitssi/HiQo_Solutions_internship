@@ -5,8 +5,7 @@ $colorLittleText: #544837;
 $colorTextFooter: #BCD0E5;
 
 body {
-  box-sizing: border-box;
-  // background-color: #ddd;
+  box-sizing: border-box;  
 }
 
 .wrapper {
@@ -59,6 +58,7 @@ min-height: 78px;
         font-size: 14px;
         line-height: 28px;        
         padding-right: 27px;
+
         a {
             color: #2F281E;
         }
@@ -73,8 +73,7 @@ min-height: 78px;
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
-  
+  font-size: 16px;  
   color: #173A56;
   border: 1px solid #BCD0E5
 }

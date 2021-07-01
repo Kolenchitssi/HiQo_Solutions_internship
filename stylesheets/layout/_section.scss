@@ -1,6 +1,7 @@
 .design-tools__title {
     max-width: 539px;
     margin: 0 auto;
+
     h2 {
         font-family: Poppins;
         font-style: normal;
@@ -12,11 +13,11 @@
         padding-bottom: 25px;
     }
 }
+
 .design-tools {    
     background:  linear-gradient(179.59deg, rgba(255, 244, 229, 0.0001)  0.33%,  rgba(255, 229, 210, 0.629261) 99.67%);
     border-radius:  0 0 50% 50%;
-    min-height: 389px;
-    
+    min-height: 389px;    
 }
 
 .design-tools__wrapper {
@@ -227,7 +228,6 @@ h4.title--up {
     font-weight: 700;  
 }
 
-
 .title-article__text {
     font-family: Poppins;
     font-style: normal;
@@ -253,7 +253,6 @@ h4.title--up {
     padding-bottom: 135px;
     position: relative;
     right: 10px;
-
 }
 
 .point {

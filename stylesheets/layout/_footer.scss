@@ -32,6 +32,7 @@
 
 .footer__nav {
     max-width: 205px;
+
     ul {
         list-style: none;
         padding-left: 0;
@@ -41,6 +42,7 @@
         font-size: 16px;
         line-height: 35px;
     }
+
     .nav__title {
         font-family: Avenir;
         font-style: normal;
@@ -51,6 +53,7 @@
         margin-top: 0;
         margin-bottom: 35px;
     }
+
     a {
         color: $colorLittleText;
     }
@@ -85,6 +88,7 @@
     height: 48px;
     padding: 15px;
     color: $colorTextFooter;
+    
     //цвет для placeholder ввода номера телефона
     &::placeholder {
         color:$colorTextFooter;

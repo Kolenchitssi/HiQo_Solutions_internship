@@ -1,4 +1,4 @@
-$colorButton: #ff9900;
+$color-button: #ff9900;
 $colorBackground: #FFFFFF;
 $colorText:#2F281E;
 $colorLittleText: #544837;
@@ -103,6 +103,6 @@ min-height: 78px;
   font-size: 16px;
   line-height: 24px;
   color: #FFFFFF;  
-  background: $colorButton;
-  border-color: $colorButton;
+  background: $color-button;
+  border-color: $color-button;
 }

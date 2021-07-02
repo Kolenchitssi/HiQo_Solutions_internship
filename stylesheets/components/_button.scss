@@ -1,3 +1,60 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex: 0 0 auto;
+    border-radius: 4px;
+    
+    &:hover {
+        cursor: pointer;
+        box-shadow:(0 0 2px 1px $color-text-footer);
+        color: $color-button-text;
+        background-color: $color-text-footer;        
+      }
+      
+      &--yellow {
+        font-family: $font-family-basic;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-button-text;  
+        background: $color-button;
+        border-color: $color-button;
+        border-style: solid;
+
+        &:hover{
+            background-color: $color-button-text;
+            color: $color-button;
+            box-shadow:(0 0 2px 1px $color-button); 
+        }
+      }
+  }
+  
+
+  .nav__button-sign-in {
+    width: 102px;
+    height: 46px;
+    margin-left: 14px;
+    margin-right: 14px;
+    font-family: $font-family-basic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;  
+    color: $color-btn-sign-in;
+    background-color: $color-background;
+    border: 1px solid $color-btn-sign-in-border;   
+  }
+  
+  .nav__button-sign-up {
+    width: 110px;
+    height: 46px;
+  }
+
+  .footer__button-sign-up {
+    width: 131px;
+    height: 39px;
+}

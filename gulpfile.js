@@ -12,8 +12,5 @@ gulp.task('sass', function () {
 });
 
 gulp.task('sass:watch', function () {
-    gulp.watch('./stylesheets/**/*.scss', gulp.parallel("sass"));
+    gulp.watch('./stylesheets/**/*.scss', gulp.parallel('sass'));
 });
-
-//для формирования css запускаем: npm run scss;
-//для постоянного отслеживанияизменений и перезаписи css запускаем: npm run watch;

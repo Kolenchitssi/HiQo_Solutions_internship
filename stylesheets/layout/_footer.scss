@@ -12,7 +12,7 @@
     }
     
     &__logo {
-        max-width: 205px;      
+        max-width: 205px;             
     }
     
     &__logo-text {
@@ -29,22 +29,26 @@
         margin-right: 82px;
     }
 
-    &-link:hover{
+    &-link:hover {
         text-decoration: underline;        
     }
     
     &__nav {
-        max-width: 205px;
+        max-width: 205px;       
     
-        ul {
+        .footer__nav-ul {
             list-style: none;
             padding-left: 0;
         }
     
-        li {
+        .footer-link {
             font-size: 16px;
             line-height: 35px;
-        }
+
+            &-a {
+                color: $color-little-text;                
+            }
+        }      
     
         .nav__title {
             font-family: $font-family-footer;
@@ -55,14 +59,10 @@
             color: $color-text;
             margin-top: 0;
             margin-bottom: 35px;
-        }
-    
-        a {
-            color: $color-little-text;
-        }      
+        }              
     }
 
-    &__logo-img{
+    &__logo-img {
         position: relative;
         bottom: 3px;
         right: 1px;
@@ -72,8 +72,6 @@
         max-width: 325px;
     }
 }
-
-
 
 .input__title {
     font-family: $font-family-footer;

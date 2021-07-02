@@ -40,7 +40,7 @@
 .card {
     max-width: 240px;
 
-    h3 {
+    &-h3 {
         font-family: $font-family-basic;
         font-style: normal;
         font-weight: 600;
@@ -50,7 +50,7 @@
         margin-top: 24px;        
     }
 
-    p {
+    &-p {
         font-family: $font-family-basic;
         font-style: normal;
         font-weight: 500;
@@ -90,7 +90,7 @@
     padding-top: 25px;
     max-width: 490px;
 
-    p {
+    .characteristics__p {
         padding-top: 0;
         font-weight: 500;
         font-size: 16px;
@@ -99,7 +99,7 @@
         color: $color-little-text;
     }
 
-    h2 {
+    .characteristics__h2 {
         margin: 4px 0 22px;        
         font-weight: bold;
         font-size: 36px;
@@ -107,7 +107,7 @@
         color: $color-text;
     }
 
-    h4 {
+    .characteristics__h4 {
         font-weight: bold;
         font-size: 16px;
         line-height: 26px;
@@ -116,16 +116,20 @@
 
         &.title--last{            
                 margin: 27px 0 11px;                           
-        }                        
+        }
+        
+        &.title--up {
+            margin: 20px 0 15px;
+        } 
     }
 
-    ul {
+    .characteristics__ul {
         margin: 0;
         padding: 14px 0 0;
         max-width: 450px;
     }
 
-    li {
+    .characteristics__li {
         list-style: none;
         background: url("../../assets/icons/li-style.svg") no-repeat 0 48%;
         padding: 17px 0 17px 65px;
@@ -147,9 +151,7 @@
     }
 }
 
-h4.title--up {
-    margin: 20px 0 15px;
-} 
+
 
 
 .characteristics__picture {

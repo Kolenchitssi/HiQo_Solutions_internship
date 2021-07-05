@@ -50,15 +50,11 @@
             }
         }      
     
-        .nav__title {
-            font-family: $font-family-footer;
-            font-style: normal;
-            font-weight: 900;
-            font-size: 20px;
-            line-height: 30px;
-            color: $color-text;
+        .nav__title {           
             margin-top: 0;
             margin-bottom: 35px;
+            @extend .footer-bold;
+            @include font-size-lh-color(); 
         }              
     }
 
@@ -73,31 +69,23 @@
     }
 }
 
-.input__title {
-    font-family: $font-family-footer;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 30px;
-    color: $color-text;    
+.input__title {       
     margin: 0;
     max-width: 280px;
     margin-bottom: 32px;
+    @extend .footer-bold;
+    @include font-size-lh-color(); 
 }
 
-.telephone {    
-    font-family: $font-family-footer;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 16px;
-    line-height: 28px;
+.telephone {   
     margin-bottom: 21px;    
     border-radius: 4px;
     border: 1px solid  $color-btn-sign-in-border;
     width: 325px;
     height: 48px;
-    padding: 15px;
-    color: $color-text-footer;
+    padding: 15px;    
+    @extend .footer-bold;
+    @include font-size-lh-color(16px, 28px,  $color-text-footer); 
     
     &::placeholder {
         color: $color-text-footer;

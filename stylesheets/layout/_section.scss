@@ -2,14 +2,10 @@
     max-width: 539px;
     margin: 0 auto;
 
-    h2 {
-        font-family: $font-family-basic;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 36px;
-        line-height: 54px;
+    h2 {      
+        @include font-weight($font-weight-title);       
+        @include font-size-lh-color(36px, 54px, $color-text);
         text-align: center;
-        color: $color-text;
         padding-bottom: 25px;
     }
 }
@@ -40,23 +36,17 @@
 .card {
     max-width: 240px;
 
-    &-h3 {
-        font-family: $font-family-basic;
-        font-style: normal;
-        font-weight: 600;
+    &-h3 {        
+        @include font-weight($card-h3); 
         font-size: 22px;
         line-height: 33px;
         margin-bottom: 15px;
         margin-top: 24px;        
     }
 
-    &-p {
-        font-family: $font-family-basic;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 26px;
-        color: $color-little-text;
+    &-p {       
+        @include font-weight(); 
+        @include font-size-lh-color(16px, 26px, $color-little-text);       
         margin-top: 0;       
     }
 }
@@ -100,11 +90,9 @@
     }
 
     .characteristics__h2 {
+        @include font-size-lh-color(36px, 54px, $color-text);  
         margin: 4px 0 22px;        
-        font-weight: bold;
-        font-size: 36px;
-        line-height: 54px;
-        color: $color-text;
+        font-weight: bold;    
     }
 
     .characteristics__h4 {
@@ -130,16 +118,11 @@
     }
 
     .characteristics__li {
+        @include font-weight();
+        @include font-size-lh-color(16px, 26px, $color-little-text); 
         list-style: none;
         background: url("../../assets/icons/li-style.svg") no-repeat 0 48%;
         padding: 17px 0 17px 65px;
-        font-family: $font-family-basic;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 26px;
-        color: $color-little-text;
-        vertical-align: top;
         
         &:first-child {
             max-width: 430px;
@@ -150,9 +133,6 @@
         }
     }
 }
-
-
-
 
 .characteristics__picture {
     max-width: 521px;
@@ -183,22 +163,14 @@
 }
 
 .marketing-strategies__title {
-    font-family: $font-family-basic;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    line-height: 51px;
-    color: $color-text;
+    @include font-weight($font-weight-title);   
+    @include font-size-lh-color(34px, 51px, $color-text);
     margin-bottom: 10px;    
 }
 
-.marketing-strategies__text {
-    font-family: $font-family-basic;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;    
-    color: $color-little-text;
+.marketing-strategies__text {    
+    @include font-weight();   
+    @include font-size-lh-color(16px, 26px, $color-little-text);
     padding-left: 2px;
     margin: 0 0 55px;
 }
@@ -220,13 +192,9 @@
 }
 
 .autor-article {
-    display: flex;
-    font-family: $font-family-basic;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 28px;
-    color: $color-little-text;
+    @extend .normal-basic;       
+    @include font-size-lh-color(16px, 28px, $color-little-text);
+    display: flex;  
     margin-top: 4px;
     margin-bottom: 12px;
 }
@@ -251,16 +219,12 @@
 }
 
 .boldtext {
-    font-weight: 700;  
+    font-weight: $font-weight-title;  
 }
 
-.title-article__text {
-    font-family: $font-family-basic;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 34px;
-    color: $color-text;
+.title-article__text {    
+    @include font-weight($font-weight-title);    
+    @include font-size-lh-color(24px, 34px, $color-text);
     max-width: 294px;
     margin: 0;   
 

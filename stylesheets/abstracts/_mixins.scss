@@ -6,3 +6,9 @@
     line-height: $lh;
     color: $color-txt;    
 }
+
+@mixin font-weight ($fnt-weight: $font-weight-average) {
+    font-family: $font-family-basic;
+    font-style: normal;
+    font-weight: $fnt-weight;
+}

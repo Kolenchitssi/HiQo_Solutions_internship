@@ -48,16 +48,14 @@ min-height: 78px;
     text-decoration: none;
     list-style: none;
     padding-right: 12px;
-    
-    
 
-    li {      
+    .nav__links-li {      
         @extend .normal-basic;
         font-size: 14px;
         line-height: 28px;        
         padding-right: 26px;
 
-        a {
+        .nav__links-a {
             color: $color-text;
 
             &:hover {

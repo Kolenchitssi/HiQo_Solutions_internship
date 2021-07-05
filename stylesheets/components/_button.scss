@@ -10,6 +10,7 @@
   flex: 0 0 auto;
   border-radius: 4px;    
   background: $color-button;
+  border: 0.5px solid $color-btn-sign-in-border; 
   border-color: $color-button;
   border-style: solid;
   // text-transform: capitalize; //in  footer "Sign up Now" it's correctly?
@@ -34,19 +35,18 @@
   }
 }  
 
-  .nav__button-sign-in {
-    width: 102px;
-    height: 46px;
-    margin-left: 17px;
-    margin-right: 14px;   
+  .nav__button-sign-in {   
+    padding: 12px 20px 9px 24px;
+    margin-left: 16px;
+    margin-right: 15px; 
+    margin-bottom: 2px;  
   }
   
-  .nav__button-sign-up {
-    width: 110px;
-    height: 46px;
+  .nav__button-sign-up {  
+    padding: 12px 22px 8px 24px;
+    margin-bottom: 2px; 
   }
 
-  .footer__button-sign-up {
-    width: 131px;
-    height: 39px;
+  .footer__button-sign-up {   
+    padding: 8px 16px 4px 13px;
 }

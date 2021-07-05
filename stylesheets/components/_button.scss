@@ -1,52 +1,44 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
-  .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    flex: 0 0 auto;
-    border-radius: 4px;
+.button {
+  @include font-weight($button-weight);
+  @include font-size-lh-color(16px, 24px, $color-button-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  flex: 0 0 auto;
+  border-radius: 4px;    
+  background: $color-button;
+  border-color: $color-button;
+  border-style: solid;
+  // text-transform: capitalize; //in  footer "Sign up Now" it's correctly?
     
-    &:hover {
+  &:hover {
         cursor: pointer;
-        box-shadow:(0 0 2px 1px $color-text-footer);
-        color: $color-button-text;
-        background-color: $color-text-footer;        
-      }
+        background-color: $color-button-text;
+        color: $color-button;
+        box-shadow:(0 0 2px 1px $color-button);             
+    }
       
-      &--primary {
-        font-family: $font-family-basic;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 24px;
-        color: $color-button-text;  
-        background: $color-button;
-        border-color: $color-button;
-        border-style: solid;
+  &--secondary {
+    color: $color-btn-sign-in;
+    background-color: $color-background;
+    border: 1px solid $color-btn-sign-in-border;        
 
-        &:hover {
-            background-color: $color-button-text;
-            color: $color-button;
-            box-shadow:(0 0 2px 1px $color-button); 
-        }
-      }
+    &:hover {
+      box-shadow:(0 0 2px 1px $color-text-footer);
+      color: $color-button-text;
+      background-color: $color-text-footer;
+    }
   }
-  
+}  
 
   .nav__button-sign-in {
     width: 102px;
     height: 46px;
     margin-left: 17px;
-    margin-right: 14px;
-    font-family: $font-family-basic;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;  
-    color: $color-btn-sign-in;
-    background-color: $color-background;
-    border: 1px solid $color-btn-sign-in-border;   
+    margin-right: 14px;   
   }
   
   .nav__button-sign-up {

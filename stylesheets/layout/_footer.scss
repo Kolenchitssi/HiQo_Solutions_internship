@@ -2,93 +2,92 @@
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
 .footer {
-    padding-top: 102px;
-    padding-bottom: 95px;
-    border-top: 1px solid $color-btn-sign-in-border;
+  padding-top: 102px;
+  padding-bottom: 95px;
+  border-top: 1px solid $color-btn-sign-in-border;
 
-    &__wrapper {
-        display: flex;
-        justify-content: flex-start;    
-    }
-    
-    &__logo {
-        max-width: 205px;             
-    }
-    
-    &__logo-text {
-        padding-top: 5px;
-        padding-left: 5px;
-    }
-    
-    &-first {
-        margin-left: 139px;
-    }
-    
-    &-second {
-        margin-left: 140px;
-        margin-right: 82px;
-    }
+  &__wrapper {
+      display: flex;
+      justify-content: flex-start;    
+  }
+  
+  &__logo {
+      max-width: 205px;             
+  }
+  
+  &__logo-text {
+      padding-top: 5px;
+      padding-left: 5px;
+  }
+  
+  &-first {
+      margin-left: 139px;
+  }
+  
+  &-second {
+      margin-left: 140px;
+      margin-right: 82px;
+  }
 
-    &-link:hover {
-        text-decoration: underline;        
-    }
-    
-    &__nav {
-        max-width: 205px;       
-    
-        .footer__nav-ul {            
-            padding-left: 0;
-        }
-    
-        .footer-link {
-            font-size: 16px;
-            line-height: 35px;
+  &-link:hover {
+      text-decoration: underline;        
+  }
+  
+  &__nav {
+      max-width: 205px;       
+  
+      .footer__nav-ul {            
+          padding-left: 0;
+      }
+  
+      .footer-link {
+          font-size: 16px;
+          line-height: 35px;
 
-            &-a {
-                color: $color-little-text;                
-            }
-        }      
-    
-        .nav__title {
-            @extend .footer-bold;
-            @include font-size-lh-color();            
-            margin-top: 0;
-            margin-bottom: 35px;           
-        }              
-    }
+          &-a {
+              color: $color-little-text;                
+          }
+      }      
+  
+      .nav__title {
+          @extend .footer-bold;
+          @include font-size-lh-color();            
+          margin-top: 0;
+          margin-bottom: 35px;           
+      }              
+  }
 
-    &__logo-img {
-        position: relative;
-        bottom: 3px;
-        right: 1px;
-    }
-    
-    &__block-input {
-        max-width: 325px;
-    }
+  &__logo-img {
+      position: relative;
+      bottom: 3px;
+      right: 1px;
+  }
+  
+  &__block-input {
+      max-width: 325px;
+  }
 }
 
 .input__title {
-    @extend .footer-bold;
-    @include font-size-lh-color();       
-    margin: 0;
-    max-width: 280px;
-    margin-bottom: 32px;     
+  @extend .footer-bold;
+  @include font-size-lh-color();       
+  margin: 0;
+  max-width: 280px;
+  margin-bottom: 32px;     
 }
 
 .telephone {
-    @extend .footer-bold;
-    @include font-size-lh-color(16px, 28px,  $color-text-footer);   
-    margin-bottom: 21px;    
-    border-radius: 4px;
-    border: 1px solid  $color-btn-sign-in-border;
-    width: 325px;
-    height: 48px;
-    padding: 15px;    
-    
-    
-    &::placeholder {
-        color: $color-text-footer;
-        opacity: 0.9;
-    }    
+  @extend .footer-bold;
+  @include font-size-lh-color(16px, 28px,  $color-text-footer);   
+  margin-bottom: 21px;    
+  border-radius: 4px;
+  border: 1px solid  $color-btn-sign-in-border;
+  width: 325px;
+  height: 48px;
+  padding: 15px;    
+  
+  &::placeholder {
+      color: $color-text-footer;
+      opacity: 0.9;
+  }    
 }

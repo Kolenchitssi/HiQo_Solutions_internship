@@ -12,16 +12,12 @@ margin-bottom: 136px;
   text-align: left;
   padding-right: 521px-459px;
 
-    &-p {
-      color: $color-little-text; 
-      padding-bottom: 36px; 
-      font-family: $font-family-basic;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 28px;
+    &-p {     
+      @extend .normal-basic;      
+      @include font-size-lh-color(18px, 28px, $color-little-text);     
       max-width: 450px;
-      margin-bottom: 22px;    
+      padding-bottom: 36px; 
+      margin-bottom: 22px;          
     }   
 }
 

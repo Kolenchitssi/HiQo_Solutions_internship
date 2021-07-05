@@ -51,10 +51,8 @@ min-height: 78px;
     
     
 
-    li {
-        font-family: $font-family-basic;
-        font-style: normal;
-        font-weight: normal;
+    li {      
+        @extend .normal-basic;
         font-size: 14px;
         line-height: 28px;        
         padding-right: 26px;

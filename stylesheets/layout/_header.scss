@@ -10,7 +10,7 @@
   &__left {
     max-width: 521px;
     text-align: left;
-    padding-right: 521px-459px;
+    padding-right: 62px;
 
       &-p {     
         @extend .normal-basic;      
@@ -30,11 +30,6 @@
     display: flex;
     justify-content: left;
     align-items: center;
-
-    .button {
-      width: 175px;
-      height: 53px;
-    }
   }
 
   &__left-play-a {

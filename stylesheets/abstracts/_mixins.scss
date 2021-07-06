@@ -8,7 +8,6 @@
 }
 
 @mixin font-weight ($fnt-weight: $font-weight-average) {
-  font-family: $font-family-basic;
-  font-style: normal;
+  font-family: $font-family-basic;  
   font-weight: $fnt-weight;
 }

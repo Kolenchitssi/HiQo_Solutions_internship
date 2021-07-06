@@ -22,10 +22,10 @@
           <img class="logo-text" src="./assets/icons/Productly.svg" alt="LogoText" />
         </a>
         <ul class="nav__links">
-          <li class="nav__links-li"><a class="nav__links-a" href="#product">Product</a></li>
-          <li class="nav__links-li"><a class="nav__links-a" href="#customers">Customers</a></li>
-          <li class="nav__links-li"><a class="nav__links-a" href="#pricing">Pricng</a></li>
-          <li class="nav__links-li"><a class="nav__links-a" href="#resources">Resources</a></li>
+          <li class="nav__links-item"><a class="nav__links-link" href="#product">Product</a></li>
+          <li class="nav__links-item"><a class="nav__links-link" href="#customers">Customers</a></li>
+          <li class="nav__links-item"><a class="nav__links-link" href="#pricing">Pricng</a></li>
+          <li class="nav__links-item"><a class="nav__links-link" href="#resources">Resources</a></li>
         </ul>
         <button class="button button--secondary nav__button-sign-in">
           Sign In
@@ -37,18 +37,22 @@
 
       <header class="header">
         <div class="header__left">
-          <h1 class="h1">The Design Thinking superpowers</h1>
-          <p class="header__left-p">Tools, tutorials, design and innovation experts, all in one place! The most
+          <h1 class="primary-title">The Design Thinking superpowers</h1>
+          <p class="header__left-paragraph">Tools, tutorials, design and innovation experts, all in one place! The most
             intuitive way to imagine your
             next user experience.</p>
           <div class="header__left-buttons">
             <button class="button header__button">Get started</button>
-            <div class="header__left-play"><a href="#" class="header__left-play-a"><img
-                  src="./assets/icons/play-button.svg" alt="play" /> <span class="watch-video">Watch the
-                  video</span></a></div>
+            <div class="header__left-play">
+              <a href="#" class="header__left-play-link">
+                <img src="./assets/icons/play-button.svg" alt="play" />
+                <span class="watch-video">Watch the video</span>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="header__right"><img src="./assets/img/header__right.png" alt="picture" class="header__right-img" />
+        <div class="header__right">
+          <img src="./assets/img/header__right.png" alt="picture" class="header__right-img" />
         </div>
       </header>
 
@@ -60,7 +64,6 @@
     </div>
   </div>
 
-
   <section class="design-tools">
 
     <div class="wrapper transparent">
@@ -68,23 +71,23 @@
 
         <div class="design-tools__wrapper">
           <div class="card"> <img src="./assets/icons/icon1.svg" alt="logo-card" />
-            <h3 class="card-h3">First click tests</h3>
-            <p class="card-p">While most people enjoy casino gambling,</p>
+            <h3 class="card-title">First click tests</h3>
+            <p class="card-text">While most people enjoy casino gambling,</p>
           </div>
 
           <div class="card"> <img src="./assets/icons/icon2.svg" alt="logo-card" />
-            <h3 class="card-h3">Design surveys</h3>
-            <p class="card-p">Sports betting, lottery and bingo playing for the fun</p>
+            <h3 class="card-title">Design surveys</h3>
+            <p class="card-text">Sports betting, lottery and bingo playing for the fun</p>
           </div>
 
           <div class="card"> <img src="./assets/icons/icon3.svg" alt="logo-card" />
-            <h3 class="card-h3">Preference tests</h3>
-            <p class="card-p">The Myspace page defines the individual.</p>
+            <h3 class="card-title">Preference tests</h3>
+            <p class="card-text">The Myspace page defines the individual.</p>
           </div>
 
           <div class="card"> <img src="./assets/icons/icon4.svg" alt="logo-card" />
-            <h3 class="card-h3">Five second tests</h3>
-            <p class="card-p">Personal choices and the overall personality of the person. </p>
+            <h3 class="card-title">Five second tests</h3>
+            <p class="card-text">Personal choices and the overall personality of the person. </p>
           </div>
         </div>
       </div>
@@ -98,19 +101,22 @@
     <div class="central-wrapper" id="product">
       <div class="characteristics-row">
         <div class="characteristics__text">
-          <p class="characteristics__p"> Effortless Validation for</p>
-          <h2 class="characteristics__h2">Design Professionals</h2>
-          <p class="characteristics__p">The Myspace page defines the individual, his or her characteristics, traits,
+          <p class="characteristics__paragraph"> Effortless Validation for</p>
+          <h2 class="characteristics__title">Design Professionals</h2>
+          <p class="characteristics__paragraph">The Myspace page defines the individual, his or her characteristics,
+            traits,
             personal choices and the overall personality of the person. </p>
-          <h4 class="characteristics__h4">Accessory makers </h4>
-          <p class="characteristics__p"> While most people enjoy casino gambling, sports betting, lottery and bingo
+          <h4 class="characteristics__subtitle">Accessory makers </h4>
+          <p class="characteristics__paragraph"> While most people enjoy casino gambling, sports betting, lottery and
+            bingo
             playing for the fun
           </p>
-          <h4 class="characteristics__h4 title--up">Alterationists</h4>
-          <p class="characteristics__p">If you are looking for a new way to promote your business that won’t cost you
+          <h4 class="characteristics__subtitle title--margin">Alterationists</h4>
+          <p class="characteristics__paragraph">If you are looking for a new way to promote your business that won’t
+            cost you
             more money, </p>
-          <h4 class="characteristics__h4 title--last">Custom Design designers</h4>
-          <p class="characteristics__p">If you are looking for a new way to promote your
+          <h4 class="characteristics__subtitle title--last">Custom Design designers</h4>
+          <p class="characteristics__paragraph">If you are looking for a new way to promote your
             business that won’t cost you more money, </p>
         </div>
         <div class="characteristics__picture characteristics__picture--right">
@@ -123,36 +129,42 @@
           <img src="./assets/img/characteristics-2.png" alt="design" />
         </div>
         <div class="characteristics__text">
-          <p class="characteristics__p"> Easier decision making for</p>
-          <h2 class="characteristics__h2">Product Managers</h2>
-          <p class="characteristics__p">The Myspace page defines the individual, his or her characteristics, traits,
+          <p class="characteristics__paragraph"> Easier decision making for</p>
+          <h2 class="characteristics__title">Product Managers</h2>
+          <p class="characteristics__paragraph">The Myspace page defines the individual, his or her characteristics,
+            traits,
             personal choices and the overall personality of the person. </p>
-          <ul class="characteristics__ul">
-            <li class="characteristics__li">Never worry about overpaying for your energy again. </li>
-            <li class="characteristics__li">We will only switch you to energy companies that we trust and will treat you
+          <ul class="characteristics__list">
+            <li class="characteristics__list-item">Never worry about overpaying for your energy again. </li>
+            <li class="characteristics__list-item">We will only switch you to energy companies that we trust and will
+              treat you
               right</li>
-            <li class="characteristics__li">We track the markets daily and know where the savings are.</li>
+            <li class="characteristics__list-item">We track the markets daily and know where the savings are.</li>
           </ul>
         </div>
       </div>
 
       <div class="characteristics-row third">
         <div class="characteristics__text">
-          <p class="characteristics__p"> Optimisation for</p>
-          <h2 class="characteristics__h2">Marketers</h2>
-          <p class="characteristics__p">Few would argue that, despite the advancements of feminism over the past three
+          <p class="characteristics__paragraph"> Optimisation for</p>
+          <h2 class="characteristics__title">Marketers</h2>
+          <p class="characteristics__paragraph">Few would argue that, despite the advancements of feminism over the past
+            three
             decades, women
             still face a
             double standard when it comes to their behavior. </p>
-          <h4 class="characteristics__h4">Accessory makers </h4>
-          <p class="characteristics__p"> While most people enjoy casino gambling, sports betting, lottery and bingo
+          <h4 class="characteristics__subtitle">Accessory makers </h4>
+          <p class="characteristics__paragraph"> While most people enjoy casino gambling, sports betting, lottery and
+            bingo
             playing for the fun
           </p>
-          <h4 class="characteristics__h4 title--up">Alterationists</h4>
-          <p class="characteristics__p">If you are looking for a new way to promote your business that won’t cost you
+          <h4 class="characteristics__subtitle title--margin">Alterationists</h4>
+          <p class="characteristics__paragraph">If you are looking for a new way to promote your business that won’t
+            cost you
             more money, </p>
-          <h4 class="characteristics__h4 title--last">Custom Design designers</h4>
-          <p class="characteristics__p">If you are looking for a new way to promote your business that won’t cost you
+          <h4 class="characteristics__subtitle title--last">Custom Design designers</h4>
+          <p class="characteristics__paragraph">If you are looking for a new way to promote your business that won’t
+            cost you
             more money, </p>
         </div>
         <div class="characteristics__picture characteristics__picture--end "><img
@@ -172,7 +184,7 @@
             </div>
             <div class="autor-article">
               <div class="autor-article__name">By <span class="boldtext">Abdullah</span></div>
-              <div class="autor-article__date">03 March 2019</div>
+              <div class="autor-article__date autor-article__date--first">03 March 2019</div>
             </div>
             <div class="title-article">
               <p class="title-article__text">Increasing Prosperity With Positive Thinking</p>
@@ -224,7 +236,7 @@
 
           <div class="footer__nav footer-first">
             <p class="nav__title">Quick Links</p>
-            <ul class="footer__nav-ul">
+            <ul class="footer__nav-list">
               <li class="footer-link"><a class="footer-link-a" href="#">About Us</a> </li>
               <li class="footer-link"><a class="footer-link-a" href="#">Blog</a></li>
               <li class="footer-link"><a class="footer-link-a" href="#">Contact</a></li>
@@ -234,11 +246,11 @@
 
           <div class="footer__nav footer-second">
             <p class="nav__title">Legal Stuff</p>
-            <ul class="footer__nav-ul">
-              <li class="footer-link"><a class="footer-link-a" href="#">Disclaimer</a></li>
-              <li class="footer-link"><a class="footer-link-a" href="#">Financing</a></li>
-              <li class="footer-link"><a class="footer-link-a" href="#">Privacy Policy</a></li>
-              <li class="footer-link"><a class="footer-link-a" href="#">Terms of Service</a></li>
+            <ul class="footer__nav-list">
+              <li class="footer-link"><a class="footer-link-item" href="#">Disclaimer</a></li>
+              <li class="footer-link"><a class="footer-link-item" href="#">Financing</a></li>
+              <li class="footer-link"><a class="footer-link-item" href="#">Privacy Policy</a></li>
+              <li class="footer-link"><a class="footer-link-item" href="#">Terms of Service</a></li>
             </ul>
           </div>
 
@@ -253,7 +265,6 @@
         </div>
       </footer>
     </div>
-
 
   </div>
   </div>

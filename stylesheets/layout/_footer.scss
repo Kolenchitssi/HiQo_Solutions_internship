@@ -36,7 +36,7 @@
   &__nav {
       max-width: 205px;       
   
-      .footer__nav-ul {            
+      .footer__nav-list {            
           padding-left: 0;
       }
   
@@ -44,7 +44,7 @@
           font-size: 16px;
           line-height: 35px;
 
-          &-a {
+          &-item {
               color: $color-little-text;                
           }
       }      

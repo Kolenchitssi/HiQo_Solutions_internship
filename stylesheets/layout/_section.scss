@@ -36,15 +36,15 @@
 .card {
   max-width: 240px;
 
-  &-h3 {        
-    @include font-weight($card-h3); 
+  &-title {        
+    @include font-weight($card-weight-title); 
     font-size: 22px;
     line-height: 33px;
     margin-bottom: 15px;
     margin-top: 24px;        
   }
 
-  &-p {       
+  &-text {       
     @include font-weight(); 
     @include font-size-lh-color(16px, 26px, $color-little-text);       
     margin-top: 0;       
@@ -80,7 +80,7 @@
   padding-top: 25px;
   max-width: 490px;
 
-  .characteristics__p {
+  .characteristics__paragraph {
     padding-top: 0;
     font-weight: 500;
     font-size: 16px;
@@ -89,13 +89,13 @@
     color: $color-little-text;
   }
 
-  .characteristics__h2 {
+  .characteristics__title {
     @include font-size-lh-color(36px, 54px, $color-text);  
     margin: 4px 0 22px;        
     font-weight: bold;    
   }
 
-  .characteristics__h4 {
+  .characteristics__subtitle {
     font-weight: bold;
     font-size: 16px;
     line-height: 26px;
@@ -106,18 +106,18 @@
       margin: 27px 0 11px;                           
     }
     
-    &.title--up {
+    &.title--margin {
       margin: 20px 0 15px;
     } 
   }
 
-  .characteristics__ul {
+  .characteristics__list {
     margin: 0;
     padding: 14px 0 0;
     max-width: 450px;
   }
 
-  .characteristics__li {
+  .characteristics__list-item {
     @include font-weight();
     @include font-size-lh-color(16px, 26px, $color-little-text); 
     list-style: none;
@@ -176,6 +176,7 @@
 .marketing-strategies__text {    
   @include font-weight();   
   @include font-size-lh-color(16px, 26px, $color-little-text);
+  letter-spacing: 0.01em;
   padding-left: 2px;
   margin: 0 0 55px;
 }
@@ -220,7 +221,11 @@
 }
 
 .autor-article__date {
-  padding-left: 4px;
+  padding-left: 0px;
+
+  &--first {
+    padding-left: 4px;
+  }
 }
 
 .boldtext {

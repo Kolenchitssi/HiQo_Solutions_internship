@@ -12,8 +12,7 @@
   background: $color-button;
   border: 0.5px solid $color-btn-sign-in-border; 
   border-color: $color-button;
-  border-style: solid;
-  // text-transform: capitalize; //in  footer "Sign up Now" it's correctly?
+  border-style: solid; 
     
   &:hover {
         cursor: pointer;

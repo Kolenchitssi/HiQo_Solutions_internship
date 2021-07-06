@@ -12,7 +12,7 @@
     text-align: left;
     padding-right: 62px;
 
-      &-p {     
+      &-paragraph {     
         @extend .normal-basic;      
         @include font-size-lh-color(18px, 28px, $color-little-text);     
         max-width: 450px;
@@ -32,7 +32,7 @@
     align-items: center;
   }
 
-  &__left-play-a {
+  &__left-play-link {
     color: $color-button; 
 
     &:hover {
@@ -51,7 +51,7 @@
   }
 }
 
-.h1 {
+.primary-title {
   padding-top: 84px;
   font-weight: bold;
   font-size: 44px;

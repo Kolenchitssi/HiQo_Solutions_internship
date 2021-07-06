@@ -49,13 +49,13 @@
   list-style: none;
   padding-right: 12px;
 
-  .nav__links-li {      
+  .nav__links-item {      
       @extend .normal-basic;
       font-size: 14px;
       line-height: 28px;        
       padding-right: 26px;
 
-      .nav__links-a {
+      .nav__links-link {
           color: $color-text;
 
           &:hover {

@@ -45,7 +45,7 @@
   }
 
   &-text {       
-    @include font-weight(); 
+    @include font-weight; 
     @include font-size-lh-color(16px, 26px, $color-little-text);       
     margin-top: 0;       
   }
@@ -118,7 +118,7 @@
   }
 
   .characteristics__list-item {
-    @include font-weight();
+    @include font-weight;
     @include font-size-lh-color(16px, 26px, $color-little-text); 
     list-style: none;
     background: url("../../assets/icons/li-style.svg") no-repeat 0 48%;
@@ -174,7 +174,7 @@
 }
 
 .marketing-strategies__text {    
-  @include font-weight();   
+  @include font-weight;   
   @include font-size-lh-color(16px, 26px, $color-little-text);
   letter-spacing: 0.01em;
   padding-left: 2px;

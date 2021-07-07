@@ -51,7 +51,7 @@
   
       .nav__title {
           @extend .footer-bold;
-          @include font-size-lh-color();            
+          @include font-size-lh-color;            
           margin-top: 0;
           margin-bottom: 35px;           
       }              
@@ -70,7 +70,7 @@
 
 .input__title {
   @extend .footer-bold;
-  @include font-size-lh-color();       
+  @include font-size-lh-color;       
   margin: 0;
   max-width: 280px;
   margin-bottom: 32px;     

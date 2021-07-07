@@ -125,7 +125,7 @@
     padding: 17px 0 18px 65px;
     
     &:first-child {
-        max-width: 430px;
+      max-width: 430px;
     }
 
     &:nth-child(2) {
@@ -134,7 +134,7 @@
     }
 
     &:last-child {
-        padding-top: 9px;
+      padding-top: 9px;
     }
   }
 }
@@ -210,13 +210,13 @@
   position: relative;    
 
   &::after {
-      position: relative;
-      display: inline-block;
-      content: "";
-      top: 2px;
-      height: 16px;
-      width: 8px;               
-      border-right: 2px solid $color-little-text;
+    position: relative;
+    display: inline-block;
+    content: "";
+    top: 2px;
+    height: 16px;
+    width: 8px;               
+    border-right: 2px solid $color-little-text;
   }
 }
 
@@ -239,7 +239,7 @@
   margin: 0;   
 
   &.active-ticket {
-      color: $color-button;
+    color: $color-button;
   }
 }
 
@@ -265,6 +265,6 @@
   background-color: $color-point;   
   
   &.activepoint {
-      background-color: $color-button;
+    background-color: $color-button;
   }
 }

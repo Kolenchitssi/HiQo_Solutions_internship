@@ -2,13 +2,22 @@
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
 @font-face {
-    font-family: 'Avenir';
-    src: url('Avenir-Black.eot');
-    src: local('Avenir Black'), local('Avenir-Black'),
-        url('../../assets/fonts/Avenir-Black.eot?#iefix') format('embedded-opentype'),
-        url('../../assets/fonts/Avenir-Black.woff2') format('woff2'),
-        url('../../assets/fonts/Avenir-Black.woff') format('woff'),
-        url('../../assets/fonts/Avenir-Black.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
+  font-family: 'Avenir';
+  src: url('Avenir-Black.eot');
+  src: local('Avenir Black'), local('Avenir-Black'),
+      url('../../assets/fonts/Avenir-Black.eot?#iefix') format('embedded-opentype'),
+      url('../../assets/fonts/Avenir-Black.woff2') format('woff2'),
+      url('../../assets/fonts/Avenir-Black.woff') format('woff'),
+      url('../../assets/fonts/Avenir-Black.ttf') format('truetype');
+  font-weight: 900;  
+}
+
+.footer-bold {
+  font-family: $font-family-footer;  
+  font-weight: 900;
+}
+
+.normal-basic {
+  font-family: $font-family-basic;  
+  font-weight: normal;//400
 }

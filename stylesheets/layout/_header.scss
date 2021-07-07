@@ -2,13 +2,56 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 .header {
-min-height: 496px;
-display: flex;
-justify-content: space-between;
-margin-bottom: 136px;
+  min-height: 496px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 136px;
+
+  &__left {
+    max-width: 521px;
+    text-align: left;
+    padding-right: 62px;
+
+      &-paragraph {     
+        @extend .normal-basic;      
+        @include font-size-lh-color(18px, 28px, $color-little-text);     
+        max-width: 450px;
+        padding-bottom: 36px; 
+        margin-bottom: 22px;          
+      }   
+  }
+
+  &__left-play {
+    margin-left: 30px;
+  }
+
+  &__left-buttons {
+    height: 53px;  
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
+  &__left-play-link {
+    color: $color-button; 
+
+    &:hover {
+      filter: drop-shadow(0 0 4px $color-button);    
+    }
+  }
+
+  &__right {
+    max-width: 605px;
+
+    &-img {
+      object-fit: scale-down;
+      position: relative;
+      top: 30px;
+    }
+  }
 }
 
-h1 {
+.primary-title {
   padding-top: 84px;
   font-weight: bold;
   font-size: 44px;
@@ -16,55 +59,9 @@ h1 {
   color: $color-text;
 }
 
-.header__left {
-  max-width: 521px;
-  text-align: left;
-  padding-right: 521px-459px;
-
-    p {
-      color: $color-little-text; 
-      padding-bottom: 36px; 
-      font-family: $font-family-basic;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 28px;
-      max-width: 450px;
-      margin-bottom: 22px;    
-    }   
-}
-
-.header__left-play {
-  margin-left: 30px;
-}
-
 .watch-video {
-  margin-left: 9px;
+  text-decoration: underline;
+  margin-left: 5px;  
   font-weight: 600;
   font-size: 16px;  
-}
-
-.header__left-buttons {
-  height: 53px;  
-  display: flex;
-  justify-content: left;
-  align-items: center;
-
-  .button{
-    width: 175px;
-    height: 53px;
-  }
-}
-
-.header__left-play a {
-  color: $color-button;
-}
-
-.header__right {
-  max-width: 605px;
-  img {
-    object-fit: scale-down;
-    position: relative;
-    top: 30px;
-  }
 }

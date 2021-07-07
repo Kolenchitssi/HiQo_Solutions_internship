@@ -17,122 +17,162 @@
   <div class="wrapper">
     <div class="central-wrapper">
       <nav class="nav">
-        <img class="logo" src="./assets/icons/logo.svg" alt="Logo" />
-        <img class="logo-text" src="./assets/icons/Productly.svg" alt="LogoText" />
+        <a class="nav__logo" href="index.html">
+          <img class="logo" src="./assets/icons/logo.svg" alt="Logo" />
+          <img class="logo-text" src="./assets/icons/Productly.svg" alt="LogoText" />
+        </a>
         <ul class="nav__links">
-          <li><a href="#">Product</a></li>
-          <li><a href="#">Customers</a></li>
-          <li><a href="#">Pricng</a></li>
-          <li><a href="#">Resources</a></li>
+          <li class="nav__links-item"><a class="nav__links-link" href="#product">Product</a></li>
+          <li class="nav__links-item"><a class="nav__links-link" href="#customers">Customers</a></li>
+          <li class="nav__links-item"><a class="nav__links-link" href="#pricing">Pricng</a></li>
+          <li class="nav__links-item"><a class="nav__links-link" href="#resources">Resources</a></li>
         </ul>
-        <button class="nav__button-sign-in button">
+        <button class="button button--secondary nav__button-sign-in">
           Sign In
         </button>
-        <button class="nav__button-sign-up button button--yellow">
+        <button class="nav__button-sign-up button">
           Sign Up
         </button>
       </nav>
 
       <header class="header">
         <div class="header__left">
-          <h1>The Design Thinking superpowers</h1>
-          <p>Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your
+          <h1 class="primary-title">The Design Thinking superpowers</h1>
+          <p class="header__left-paragraph">Tools, tutorials, design and innovation experts, all in one place! The most
+            intuitive way to imagine your
             next user experience.</p>
           <div class="header__left-buttons">
-            <button class="button button--yellow">Get started</button>
-            <div class="header__left-play"><a href="#"><img src="./assets/icons/play-button.svg" alt="play" /> <span
-                  class="watch-video">Watch the
-                  video</span></a></div>
+            <button class="button header__button">Get started</button>
+            <div class="header__left-play">
+              <a href="#" class="header__left-play-link">
+                <img src="./assets/icons/play-button.svg" alt="play" />
+                <span class="watch-video">Watch the video</span>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="header__right"><img src="./assets/img/header__right.png" alt="picture" /></div>
+        <div class="header__right">
+          <img src="./assets/img/header__right.png" alt="picture" class="header__right-img" />
+        </div>
       </header>
 
       <section>
-        <div class="design-tools__title">
+        <div class="design-tools__title" id="resources">
           <h2>We design tools to unveil your superpowers</h2>
         </div>
       </section>
     </div>
+  </div>
 
-    <section class="design-tools">
+  <section class="design-tools">
 
+    <div class="wrapper transparent">
       <div class="central-wrapper">
+
         <div class="design-tools__wrapper">
           <div class="card"> <img src="./assets/icons/icon1.svg" alt="logo-card" />
-            <h3>First click tests</h3>
-            <p>While most people enjoy casino gambling,</p>
+            <h3 class="card-title">First click tests</h3>
+            <p class="card-text">While most people enjoy casino gambling,</p>
           </div>
+
           <div class="card"> <img src="./assets/icons/icon2.svg" alt="logo-card" />
-            <h3>Design surveys</h3>
-            <p>Sports betting, lottery and bingo playing for the fun</p>
+            <h3 class="card-title">Design surveys</h3>
+            <p class="card-text">Sports betting, lottery and bingo playing for the fun</p>
           </div>
+
           <div class="card"> <img src="./assets/icons/icon3.svg" alt="logo-card" />
-            <h3>Preference tests</h3>
-            <p>The Myspace page defines the individual.</p>
+            <h3 class="card-title">Preference tests</h3>
+            <p class="card-text">The Myspace page defines the individual.</p>
           </div>
+
           <div class="card"> <img src="./assets/icons/icon4.svg" alt="logo-card" />
-            <h3>Five second tests</h3>
-            <p>Personal choices and the overall personality of the person. </p>
+            <h3 class="card-title">Five second tests</h3>
+            <p class="card-text">Personal choices and the overall personality of the person. </p>
           </div>
         </div>
       </div>
-      <button class="sign-up button button--yellow">sign up now</button>
-    </section>
 
-    <div class="central-wrapper">
+      <button class="sign-up button">sign up now</button>
+    </div>
+    <div class="design-tools--gradient"></div>
+  </section>
+
+  <div class="wrapper">
+    <div class="central-wrapper" id="product">
       <div class="characteristics-row">
         <div class="characteristics__text">
-          <p> Effortless Validation for</p>
-          <h2>Design Professionals</h2>
-          <p>The Myspace page defines the individual, his or her characteristics, traits, personal choices and the
-            overall personality of the person. </p>
-          <h4>Accessory makers </h4>
-          <p> While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</p>
-          <h4 class="title--up">Alterationists</h4>
-          <p>If you are looking for a new way to promote your business that won’t cost you more money, </p>
-          <h4 class="title--last">Custom Design designers</h4>
-          <p>If you are looking for a new way to promote your business that won’t cost you more money, </p>
+          <p class="characteristics__paragraph"> Effortless Validation for</p>
+          <h2 class="characteristics__title">Design Professionals</h2>
+          <p class="characteristics__paragraph">The Myspace page defines the individual, his or her characteristics,
+            traits,
+            personal choices and the overall personality of the person. </p>
+          <h4 class="characteristics__subtitle">Accessory makers </h4>
+          <p class="characteristics__paragraph"> While most people enjoy casino gambling, sports betting, lottery and
+            bingo
+            playing for the fun
+          </p>
+          <h4 class="characteristics__subtitle title--margin">Alterationists</h4>
+          <p class="characteristics__paragraph">If you are looking for a new way to promote your business that won’t
+            cost you
+            more money, </p>
+          <h4 class="characteristics__subtitle title--last">Custom Design designers</h4>
+          <p class="characteristics__paragraph">If you are looking for a new way to promote your
+            business that won’t cost you more money, </p>
         </div>
-        <div class="characteristics__picture characteristics__picture--right"><img
-            src="./assets/img/characteristics-1.png" alt="design" /></div>
+        <div class="characteristics__picture characteristics__picture--right">
+          <img src="./assets/img/characteristics-1.png" alt="design" />
+        </div>
       </div>
 
       <div class="characteristics-row">
-        <div class="characteristics__picture characteristics__picture--left"><img
-            src="./assets/img/characteristics-2.png" alt="design" /></div>
+        <div class="characteristics__picture characteristics__picture--left">
+          <img src="./assets/img/characteristics-2.png" alt="design" />
+        </div>
         <div class="characteristics__text">
-          <p> Easier decision making for</p>
-          <h2>Product Managers</h2>
-          <p>The Myspace page defines the individual, his or her characteristics, traits, personal choices and the
-            overall
-            personality of the person. </p>
-          <ul>
-            <li>Never worry about overpaying for your energy again. </li>
-            <li>We will only switch you to energy companies that we trust and will treat you right</li>
-            <li>We track the markets daily and know where the savings are.</li>
+          <p class="characteristics__paragraph"> Easier decision making for</p>
+          <h2 class="characteristics__title">Product Managers</h2>
+          <p class="characteristics__paragraph">The Myspace page defines the individual, his or her characteristics,
+            traits,
+            personal choices and the overall personality of the person. </p>
+          <ul class="characteristics__list">
+            <li class="characteristics__list-item">Never worry about overpaying for your energy again. </li>
+            <li class="characteristics__list-item">We will only switch you to energy companies that we trust and will
+              treat you
+              right</li>
+            <li class="characteristics__list-item">We track the markets daily and know where the savings are.</li>
           </ul>
         </div>
       </div>
 
       <div class="characteristics-row third">
         <div class="characteristics__text">
-          <p> Optimisation for</p>
-          <h2>Marketers</h2>
-          <p>Few would argue that, despite the advancements of feminism over the past three decades, women still face a
+          <p class="characteristics__paragraph"> Optimisation for</p>
+          <h2 class="characteristics__title">Marketers</h2>
+          <p class="characteristics__paragraph">Few would argue that, despite the advancements of feminism over the past
+            three
+            decades, women
+            still face a
             double standard when it comes to their behavior. </p>
-          <h4>Accessory makers </h4>
-          <p> While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</p>
-          <h4 class="title--up">Alterationists</h4>
-          <p>If you are looking for a new way to promote your business that won’t cost you more money, </p>
-          <h4 class="title--last">Custom Design designers</h4>
-          <p>If you are looking for a new way to promote your business that won’t cost you more money, </p>
+          <h4 class="characteristics__subtitle">Accessory makers </h4>
+          <p class="characteristics__paragraph"> While most people enjoy casino gambling, sports betting, lottery and
+            bingo
+            playing for the fun
+          </p>
+          <h4 class="characteristics__subtitle title--margin">Alterationists</h4>
+          <p class="characteristics__paragraph">If you are looking for a new way to promote your business that won’t
+            cost you
+            more money, </p>
+          <h4 class="characteristics__subtitle title--last">Custom Design designers</h4>
+          <p class="characteristics__paragraph">If you are looking for a new way to promote your business that won’t
+            cost you
+            more money, </p>
         </div>
         <div class="characteristics__picture characteristics__picture--end "><img
             src="./assets/img/characteristics-3.png" alt="design" /></div>
       </div>
 
-      <section class="marketing-strategies">
+      <section class="marketing-strategies" id="customers">
+
         <h2 class="marketing-strategies__title">Marketing Strategies</h2>
         <p class="marketing-strategies__text">Join 40,000+ other marketers and get proven strategies on email marketing
         </p>
@@ -144,7 +184,7 @@
             </div>
             <div class="autor-article">
               <div class="autor-article__name">By <span class="boldtext">Abdullah</span></div>
-              <div class="autor-article__date">03 March 2019</div>
+              <div class="autor-article__date autor-article__date--first">03 March 2019</div>
             </div>
             <div class="title-article">
               <p class="title-article__text">Increasing Prosperity With Positive Thinking</p>
@@ -183,40 +223,42 @@
           <li class="point"></li>
         </ul>
       </section>
-      <footer class="footer">
+
+      <footer class="footer" id="pricing">
+
         <div class="footer__wrapper">
           <div class="footer__logo">
-            <a href="#">
-              <img src="./assets/icons/logo.svg" alt="Logo" />
+            <a class="footer__logo-a" href="index.html">
+              <img src="./assets/icons/logo.svg" alt="Logo" class="footer__logo-img" />
               <img class="footer__logo-text" src="./assets/icons/Productly.svg" alt="LogoText" />
             </a>
           </div>
 
           <div class="footer__nav footer-first">
-            <p class="nav__title">Quick links</p>
-            <ul>
-              <li class="footer-link"><a href="#">About Us</a> </li>
-              <li class="footer-link"><a href="#">Blog</a></li>
-              <li class="footer-link"><a href="#">Contact</a></li>
-              <li class="footer-link"><a href="#">FAQ</a></li>
+            <p class="nav__title">Quick Links</p>
+            <ul class="footer__nav-list">
+              <li class="footer-link"><a class="footer-link-item" href="#">About Us</a> </li>
+              <li class="footer-link"><a class="footer-link-item" href="#">Blog</a></li>
+              <li class="footer-link"><a class="footer-link-item" href="#">Contact</a></li>
+              <li class="footer-link"><a class="footer-link-item" href="#">FAQ</a></li>
             </ul>
           </div>
 
           <div class="footer__nav footer-second">
             <p class="nav__title">Legal Stuff</p>
-            <ul>
-              <li class="footer-link"><a href="#">Disclaimer</a></li>
-              <li class="footer-link"><a href="#">Financing</a></li>
-              <li class="footer-link"><a href="#">Privacy Policy</a></li>
-              <li class="footer-link"><a href="#">Terms of Service</a></li>
+            <ul class="footer__nav-list">
+              <li class="footer-link"><a class="footer-link-item" href="#">Disclaimer</a></li>
+              <li class="footer-link"><a class="footer-link-item" href="#">Financing</a></li>
+              <li class="footer-link"><a class="footer-link-item" href="#">Privacy Policy</a></li>
+              <li class="footer-link"><a class="footer-link-item" href="#">Terms of Service</a></li>
             </ul>
           </div>
 
           <div class="footer__block-input">
             <p class="input__title">knowing you're always on the best energy deal</p>
-            <input class="telephone" type="tel" name="phone" id="phoneNumber" placeholder="Enter your number phone" />
-            <button class="footer__button-sign-up button button--yellow">
-              Sign Up Now
+            <input class="telephone" type="tel" name="phone" id="phoneNumber" placeholder="Enter your phone Number" />
+            <button class="footer__button-sign-up button">
+              Sign up Now
             </button>
           </div>
 
@@ -224,8 +266,7 @@
       </footer>
     </div>
 
-
-
+  </div>
   </div>
 </body>
 

@@ -1,3 +1,13 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
+@mixin font-size-lh-color ($fsz: 20px, $lh: 30px, $color-txt: $color-text){
+  font-size: $fsz;
+  line-height: $lh;
+  color: $color-txt;    
+}
+
+@mixin font-weight ($fnt-weight: $font-weight-average) {
+  font-family: $font-family-basic;  
+  font-weight: $fnt-weight;
+}

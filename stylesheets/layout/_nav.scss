@@ -49,7 +49,7 @@
   list-style: none;
   padding-right: 12px;
 
-  .nav__links-item {      
+  &-item {      
       @extend .normal-basic;
       font-size: 14px;
       line-height: 28px;        
@@ -165,7 +165,13 @@
   }
 }
 
-@media (max-width: 980px) {
+@media (max-width: 948px) {
+  .nav__links-item {
+    padding-right: 12px;
+  }
+}
+
+@media (max-width: 768px) {
   .central-wrapper {
     margin: 0 60px;
   }

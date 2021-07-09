@@ -268,14 +268,77 @@
 }
 
 @media (max-width: 1400px) {
-  .characteristics__picture-image {
-    max-width: 35vw;
+
+  .characteristics {
+    &-row {
+      padding-top: 20px;
+
+      &.third {
+        margin: 0;
+        padding-top: 20px;        
+      }
+    }
+
+    &__picture-image {
+      max-width: 30vw;    
+    }
+
+    &__picture {
+      width: auto;
+    }
+
+    &__text,
+    &__paragraph {       
+      font-size: 14px;
+      line-height: 18px;     
+    }
+
+    &__title {
+      margin-bottom: 10px;
+    }
+
+    &__subtitle {
+      margin: 10px 0 0;
+      
+      &.title--margin,
+      &.title--last {
+        margin: 10px 0 0;
+      }
+    }
+
+    &__list {
+      padding-top: 0;
+    }
+
+    &__list-item,
+    &__list-item:first-child,
+    &__list-item:nth-child(2),
+    &__list-item:last-child {
+      padding-bottom: 0;
+      padding-top: 5px;
+      font-size: 14px;
+      line-height: 18px;
+      background-size: 16px;
+      padding-left: 30px;         
+    }
+  } 
+
+  .marketing-strategies__ticket {
+    flex: 0 1 20vw;  
   }
 
-  .characteristics__text,
-  .characteristics__paragraph {       
-    font-size: 14px;
-    line-height: 20px;     
+  .marketing-strategies__title,
+  .marketing-strategies__text {
+    margin-top: 10px; 
+    margin-bottom: 10px;
+  }
+
+  .ticket__picture-image {
+    max-width: 300px;
+  }
+
+  .points {
+    padding: 0 0 50px;
   }
 }
 
@@ -284,8 +347,22 @@
     max-width: 200px;
   }
 
-  .marketing-strategies__wrapper{
-    flex-wrap: wrap;
+  .ticket__picture-image {
+    max-width: 24vw;
+  }
+
+  .title-article__text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  // .marketing-strategies__wrapper{
+  //   flex-wrap: wrap;
+  // }
+
+  .marketing-strategies__ticket {
+    min-height: auto;
+    margin-bottom: 30px;
   }
 }
 

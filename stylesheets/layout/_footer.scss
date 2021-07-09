@@ -157,5 +157,32 @@
     width: auto;
     max-width: 250px;
   }
-
 }
+
+@media (max-width: 640px) { 
+  .footer__wrapper{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "nav1 nav2"
+                         "tel tel";
+  }
+  .footer__nav {
+    max-width: 70vw;
+  }
+
+  .footer__block-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .footer__button-sign-up {
+    margin-left: 4vw;
+    display: block;    
+  }
+}
+
+@media (max-width: 480px) {
+  .telephone {
+    max-width: 30vw;
+  }
+}  

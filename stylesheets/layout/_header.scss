@@ -96,3 +96,21 @@
     line-height: 20px;
   }
 }
+
+@media (max-width: 422px) {
+  .watch-video {
+  font-size: 14px;
+  }
+}
+
+@media (max-width: 410px) {
+  .header__left-buttons {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .header__left-play {
+    padding: 20px 0;
+    margin-left: 0;
+  }
+}

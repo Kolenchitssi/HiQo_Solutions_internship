@@ -66,6 +66,10 @@
   }
 }
 
+.button__wrap {
+  display: flex;
+}
+
 .burger {
   width: 40px;
   height: 40px;  
@@ -86,7 +90,7 @@
     right: 24px;   
     padding: 20px 10px 10px;
     margin-top: 30px;
-    visibility: hidden;         
+    visibility: hidden;            
   }
 
   &__item {
@@ -95,8 +99,7 @@
     
   &__link {
     color: $color-background;
-    font-weight: 700;
-    filter: drop-shadow(0 0 1px $color-btn-sign-in);
+    font-weight: 700;    
   
     &:hover {
       color: $color-button;
@@ -168,9 +171,9 @@
 }
 
 @media (max-width: 1280px) {
-  .central-wrapper {
-    margin: 0 120px;
-  }
+  .nav {
+    justify-content: space-between;
+  } 
 
   .logo-text {
     margin-right: 1.4vw;
@@ -200,10 +203,6 @@
 }
 
 @media (max-width: 768px) {
-  .central-wrapper {
-    margin: 0 60px;
-  }
-
   .burger {
     display: block;
   }
@@ -213,5 +212,8 @@
   }
 }
 
-@media (max-width: 640px) { 
+@media (max-width: 640px) {
+   .wrapper .central-wrapper {
+    margin: 0 10px;
+  }
 }

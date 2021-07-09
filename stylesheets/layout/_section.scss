@@ -266,6 +266,11 @@
   &.activepoint {
     background-color: $color-button;
   }
+
+  &:hover {
+    background-color: $color-btn-sign-in;
+    filter: brightness(2);
+  }
 }
 
 @media (max-width: 1400px) {
@@ -329,11 +334,13 @@
   }
 
   .marketing-strategies__title {
-    margin: 30px 0 0;
+    margin: 30px 0 0;    
   }
 
   .marketing-strategies__text {
     margin: 0 0 5px;
+    font-size: 14px;
+    line-height: 18px; 
   }
 
   .ticket__picture-image {
@@ -463,17 +470,13 @@
 @media (max-width: 768px) {
   .header__left-paragraph {
     padding-bottom: 0;
-  }  
-
-  .marketing-strategies__wrapper {
-    justify-content: space-around;
-  }
+  }    
   
   .marketing-strategies__ticket::before {
     content: '';
     display: block;
     width: 0;
-    height: 1px;    
+    height: 0;    
     border-right: 20px solid $color-button;
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
@@ -527,8 +530,10 @@
     }
   }
 
-  .characteristics__title {
+  .characteristics__title,
+  .marketing-strategies__title {
     font-size: 24px;
+    margin: 0;     
   }
 
   .card-title {
@@ -539,4 +544,70 @@
     font-size: 13px;
     padding-left: 72px;    
   } 
+}
+
+@media (max-width: 480px) {
+  .characteristics__text {
+    padding-top: 20px;
+  }
+  .ticket__picture-image {
+    max-width: 300px;
+  }
+
+  .marketing-strategies__title {
+    margin-top: 20px;
+  }
+
+  .marketing-strategies__ticket::before {      
+    border-right: 20px solid $color-button;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;    
+    top: 102px;
+    right: 30px;      
+  } 
+
+  .marketing-strategies__ticket::after {       
+    border-left: 20px solid $color-button;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;    
+    bottom: 234px;
+    left: 310px;      
+  } 
+}
+
+@media (max-width: 380px) {
+  .ticket__picture-image {
+    max-width: 210px;
+  }
+
+  .marketing-strategies__ticket {
+    padding-bottom: 0;
+    margin-bottom: 0;    
+    max-height: 300px;
+    
+  }
+
+  .marketing-strategies__ticket::before {      
+    border-right: 20px solid $color-button;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;    
+    top: 80px;
+    right: 30px;      
+  } 
+
+  .marketing-strategies__ticket::after {       
+    border-left: 20px solid $color-button;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;    
+    bottom: 210px;
+    left: 220px;      
+  }
+  
+  .autor-article {
+    font-size: 14px;
+  }
+
+  .title-article__text {
+    font-size: 16px;
+  }
 }

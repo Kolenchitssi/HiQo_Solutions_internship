@@ -2,7 +2,7 @@
   max-width: 539px;
   margin: 0 auto;
 
-  h2 {      
+  .tools__title {      
     @include font-weight($font-weight-title);       
     @include font-size-lh-color(36px, 54px, $color-text);
     text-align: center;
@@ -61,7 +61,6 @@
   top: 12px;
   left: 10px; 
 }
-
 
 .characteristics-row {
   display: flex;
@@ -383,7 +382,7 @@
     max-width: 30vw;
   }
 
-  .card-image{
+  .card-image {
     float: left;
     padding-right: 25px;
   }
@@ -486,7 +485,6 @@
     cursor: pointer;   
   } 
  
-
   .marketing-strategies__ticket::after {
     content: '';
     display: block;
@@ -522,7 +520,7 @@
     width: 260%;   
   }
 
-  .design-tools__title{
+  .design-tools__title {
     margin-bottom: 0;
     .tools__title {
       font-size: 24px;
@@ -550,6 +548,7 @@
   .characteristics__text {
     padding-top: 20px;
   }
+
   .ticket__picture-image {
     max-width: 300px;
   }
@@ -583,8 +582,7 @@
   .marketing-strategies__ticket {
     padding-bottom: 0;
     margin-bottom: 0;    
-    max-height: 300px;
-    
+    max-height: 300px;    
   }
 
   .marketing-strategies__ticket::before {      

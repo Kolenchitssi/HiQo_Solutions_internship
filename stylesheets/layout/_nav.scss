@@ -50,19 +50,19 @@
   padding-right: 12px;
 
   &-item {      
-      @extend .normal-basic;
-      font-size: 14px;
-      line-height: 28px;        
-      padding-right: 26px;
+    @extend .normal-basic;
+    font-size: 14px;
+    line-height: 28px;        
+    padding-right: 26px;
 
-      .nav__links-link {
-          color: $color-text;
+    .nav__links-link {
+      color: $color-text;
 
-          &:hover {
-            color: $color-button;
-            filter: drop-shadow(0 0 0.5px $color-button);              
-          }
+      &:hover {
+        color: $color-button;
+        filter: drop-shadow(0 0 0.5px $color-button);              
       }
+    }
   }
 }
 
@@ -183,7 +183,7 @@
     padding-left: 10px;
   }
 
-  .nav__links-item{
+  .nav__links-item {
     padding-right: 10px;
   }
 }

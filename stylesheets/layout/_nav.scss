@@ -161,6 +161,10 @@
   .logo-text {
     margin-right: 12vw;
   }
+
+  .wrapper .central-wrapper {
+    margin: 0 60px;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -169,11 +173,15 @@
   }
 
   .logo-text {
-    margin-right: 1.5vw;
+    margin-right: 1.4vw;
   }
 
   .nav__links {
     padding-left: 10px;
+  }
+
+  .nav__links-item{
+    padding-right: 10px;
   }
 }
 

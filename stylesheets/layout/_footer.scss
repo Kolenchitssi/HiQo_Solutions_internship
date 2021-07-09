@@ -94,7 +94,7 @@
 
 @media (max-width: 1280px) {
   .footer {
-    padding-top: 50px;
+    padding-top: 20px;
 
     &__wrapper{
         flex-wrap: wrap;             
@@ -107,5 +107,55 @@
     &__logo {
         display: none;
     }
+
+    .nav__title {                
+      margin-top: 0;
+      margin-bottom: 0;               
+    }
+
+    &__nav-list {
+      margin-top: 0;
+    }
+
+    .footer-link {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    .input__title {
+      padding-top: 10px;
+      margin-bottom: 5px;
+      line-height: 24px;
+    }
   }
+}
+
+@media (max-width: 920px) {
+  .footer__wrapper {
+    display: grid;
+    justify-content: space-between;    
+    grid-template-areas: "nav1 nav2 tel"                         
+  }
+
+  .footer-first {
+    grid-area: nav1;
+  }
+
+  .footer-second {
+    grid-area: nav2;
+  }
+
+  .footer__block-input {
+    grid-area: tel;    
+  }
+
+  .input__title {
+    display: none;
+  }
+
+  .telephone {
+    width: auto;
+    max-width: 250px;
+  }
+
 }

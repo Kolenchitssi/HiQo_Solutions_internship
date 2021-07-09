@@ -12,7 +12,8 @@
 
 .design-tools {        
   min-height: 389px;
-  position: relative;    
+  position: relative;
+  overflow: hidden;    
 }
 
 .design-tools--gradient {
@@ -327,10 +328,12 @@
     flex: 0 1 20vw;  
   }
 
-  .marketing-strategies__title,
+  .marketing-strategies__title {
+    margin: 30px 0 0;
+  }
+
   .marketing-strategies__text {
-    margin-top: 10px; 
-    margin-bottom: 10px;
+    margin: 0 0 5px;
   }
 
   .ticket__picture-image {
@@ -354,11 +357,7 @@
   .title-article__text {
     font-size: 20px;
     line-height: 24px;
-  }
-
-  // .marketing-strategies__wrapper{
-  //   flex-wrap: wrap;
-  // }
+  }  
 
   .marketing-strategies__ticket {
     min-height: auto;
@@ -374,11 +373,169 @@
   }
 
   .card {
-    min-width: 30vw;
+    max-width: 30vw;
   }
 
   .card-image{
     float: left;
     padding-right: 25px;
   }
+
+  .characteristics-row {
+    padding-top: 0;
+    max-width: 100%;
+
+    &.third {
+      padding-top: 0;
+    }
+  }
+  
+  .characteristics__text {
+    padding-top: 30px;
+    max-width: 100%;
+  }
+
+  .characteristics__title {
+    margin: 0;
+  }
+
+
+  .characteristics__picture {
+    display: none;
+  }
+
+  .design-tools--gradient {    
+    left: 50%;
+    transform: translateX(-50%);    
+    height: 250px;
+    width: 200%;   
+  }
+}
+
+@media (max-width: 1000px) {
+  .header__right-img {
+    display: none;
+  } 
+
+  .marketing-strategies__wrapper {
+    justify-content: space-around;
+  }
+  
+  .card-title {
+    margin: 0;
+  }
+
+  .marketing-strategies__ticket:last-child {
+    display: none;
+  }
+
+  .ticket__picture-image {
+    max-width: 30vw;
+  }
+
+  .primary-title {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 820px) {
+  .design-tools__wrapper {    
+    grid-template-columns: 1fr;
+    justify-items: center;        
+  }
+  
+  .card {
+    max-width: 90vw;
+    width: 100%;    
+  }
+
+  .card-title {
+    margin: 0;
+  }
+  
+  .card-text {
+    max-width: 100%;
+    margin-bottom: 0;
+    padding-left: 72px;    
+  } 
+}
+
+@media (max-width: 768px) {
+  .header__left-paragraph {
+    padding-bottom: 0;
+  }  
+
+  .marketing-strategies__wrapper {
+    justify-content: space-around;
+  }
+  
+  .marketing-strategies__ticket::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;    
+    border-right: 20px solid $color-button;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: relative;
+    top: 120px;
+    right: 40px;
+    cursor: pointer;   
+  } 
+
+  .marketing-strategies__ticket::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;    
+    border-left: 20px solid $color-button;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: relative;
+    bottom: 220px;
+    left: 370px;
+    cursor: pointer;   
+  } 
+  
+  .points {
+    display: none;
+  }
+  
+  .marketing-strategies__ticket:first-child {
+    display: none;
+  }
+
+  .ticket__picture-image {
+    max-width: 70vw;
+  }
+}
+
+@media (max-width: 640px) {
+  .design-tools--gradient {    
+    left: 50%;
+    transform: translateX(-50%);    
+    height: 250px;
+    width: 260%;   
+  }
+
+  .design-tools__title{
+    margin-bottom: 0;
+    .tools__title {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  .characteristics__title {
+    font-size: 24px;
+  }
+
+  .card-title {
+    font-size: 14px;
+  }
+  
+  .card-text {
+    font-size: 13px;
+    padding-left: 72px;    
+  } 
 }

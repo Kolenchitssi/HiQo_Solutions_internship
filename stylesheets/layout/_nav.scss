@@ -83,10 +83,10 @@
   &__list {
     position: absolute;
     top: 10px;
-    right: 4px;   
-    padding: 40px 10px 10px;
-    visibility: hidden;
-    // display: none;    
+    right: 24px;   
+    padding: 20px 10px 10px;
+    margin-top: 30px;
+    visibility: hidden;         
   }
 
   &__item {
@@ -94,11 +94,13 @@
   }
     
   &__link {
-    color: $color-text;
+    color: $color-background;
+    font-weight: 700;
+    filter: drop-shadow(0 0 1px $color-btn-sign-in);
   
     &:hover {
       color: $color-button;
-      filter: drop-shadow(0 0 0.5px $color-button);              
+      filter: drop-shadow(0 0 1.5px $color-button);              
     }
   }    
 }
@@ -137,7 +139,9 @@
 }
 
 #menu__toggle:checked ~ .burger__list {
-  visibility: visible;  
+  visibility: visible;
+  background-color: rgba( $color-btn-sign-in, 0.85);
+  border-radius: 8px;  
 }
 
 #menu__toggle:checked ~ .menu__btn > span {
@@ -165,11 +169,23 @@
   }
 
   .logo-text {
-    margin-right: 3vw;
+    margin-right: 1.5vw;
+  }
+
+  .nav__links {
+    padding-left: 10px;
   }
 }
 
 @media (max-width: 948px) {
+  .nav {
+    justify-content: space-between;
+    
+    .button {
+      display: none;
+    }
+  }
+
   .nav__links-item {
     padding-right: 12px;
   }
@@ -178,10 +194,6 @@
 @media (max-width: 768px) {
   .central-wrapper {
     margin: 0 60px;
-  }
-
-  .nav {
-    justify-content: space-around;
   }
 
   .burger {
@@ -193,8 +205,5 @@
   }
 }
 
-@media (max-width: 640px) {
-  .logo {
-    display: none;
-  }
+@media (max-width: 640px) { 
 }

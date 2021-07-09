@@ -366,3 +366,19 @@
   }
 }
 
+@media (max-width: 1100px) {
+  .design-tools__wrapper {    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;    
+  }
+
+  .card {
+    min-width: 30vw;
+  }
+
+  .card-image{
+    float: left;
+    padding-right: 25px;
+  }
+}

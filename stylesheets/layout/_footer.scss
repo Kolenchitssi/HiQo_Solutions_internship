@@ -103,15 +103,11 @@
 
     &__nav{
         margin: auto;
-    }
-
-    &__logo {
-        display: none;
-    }
+    }   
 
     .nav__title {                
       margin-top: 0;
-      margin-bottom: 0;               
+      margin-bottom: 10px;               
     }
 
     &__nav-list {
@@ -136,6 +132,10 @@
     display: grid;
     justify-content: space-between;    
     grid-template-areas: "nav1 nav2 tel"                         
+  }
+
+  .footer__logo {
+    display: none;
   }
 
   .footer-first {
@@ -164,16 +164,18 @@
   .footer__wrapper {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "nav1 nav2"
-                         "tel tel";
+                         "tel tel";                        
   }
   
   .footer__nav {
     max-width: 70vw;
+    text-align: center;
+    margin: 0 auto;
   }
 
   .footer__block-input {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;    
     margin: 0 auto;
   }

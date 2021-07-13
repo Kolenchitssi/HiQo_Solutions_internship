@@ -379,12 +379,26 @@
   }
 
   .card {
-    max-width: 30vw;
-  }
+    max-width: 40vw;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "card-img  card-title"
+                         "card-img  card-txt";
 
-  .card-image {
-    float: left;
-    padding-right: 25px;
+    &-title {
+      grid-area: card-title;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    &-image {
+      grid-area: card-img;      
+    }
+
+    &-text {
+      grid-area: card-txt;
+    }
+   
   }
 
   .characteristics-row {
@@ -451,8 +465,10 @@
   }
   
   .card {
+    grid-template-columns: 1fr 6fr;    
     max-width: 90vw;
-    width: 100%;    
+    width: 100%;
+    margin-bottom: 20px;    
   }
 
   .card-title {
@@ -461,8 +477,7 @@
   
   .card-text {
     max-width: 100%;
-    margin-bottom: 0;
-    padding-left: 72px;    
+    margin-bottom: 0;       
   } 
 }
 
@@ -509,7 +524,15 @@
 
   .ticket__picture-image {
     max-width: 70vw;
+  }  
+
+  .card-title {
+    font-size: 18px;
   }
+  
+  .card-text {
+    font-size: 16px;       
+  } 
 }
 
 @media (max-width: 640px) {
@@ -533,15 +556,6 @@
     font-size: 24px;
     margin: 0;     
   }
-
-  .card-title {
-    font-size: 14px;
-  }
-  
-  .card-text {
-    font-size: 13px;
-    padding-left: 72px;    
-  } 
 }
 
 @media (max-width: 480px) {

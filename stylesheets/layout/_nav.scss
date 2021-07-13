@@ -181,6 +181,7 @@
 
   .nav__links {
     padding-left: 10px;
+    margin-left: auto;
   }
 
   .nav__links-item {
@@ -200,9 +201,7 @@
   .nav__links-item {
     padding-right: 12px;
   }
-}
 
-@media (max-width: 768px) {
   .burger {
     display: block;
   }

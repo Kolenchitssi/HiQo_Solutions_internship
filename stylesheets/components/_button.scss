@@ -28,7 +28,7 @@
     border: 1px solid $color-btn-sign-in-border;        
 
     &:hover {
-      box-shadow:(0 0 2px 1px $color-text-footer);
+      box-shadow: none;
       color: $color-button-text;
       background-color: $color-text-footer;
     }

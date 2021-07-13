@@ -266,9 +266,8 @@
     background-color: $color-button;
   }
 
-  &:hover {
-    background-color: $color-btn-sign-in;
-    filter: brightness(2);
+  &:hover {    
+    filter: brightness(0.9);       
   }
 }
 

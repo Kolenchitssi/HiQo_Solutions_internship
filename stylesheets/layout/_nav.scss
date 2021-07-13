@@ -73,11 +73,7 @@
 .burger {
   width: 40px;
   height: 40px;  
-  background-color:  $color-text-footer;
-  opacity: 0.8;
-  border-radius: 15%;
-  background-repeat: no-repeat;
-  background-position: 50% 50%; 
+  border-radius: 4px;  
   position: relative;
   padding: 0 8px;  
   margin-left: 10px;
@@ -86,20 +82,24 @@
 
   &__list {
     position: absolute;
-    top: 10px;
-    right: 24px;   
-    padding: 20px 10px 10px;
+    top: 8px;
+    right: 8px;   
+    padding: 0;
     margin-top: 30px;
+    min-width: 200px;
     visibility: hidden;            
   }
 
   &__item {
-    padding: 4px;
+    padding: 16px 16px 16px 32px;
+    display: block;
+    border-bottom: 1px solid $color-background;
   }
     
   &__link {
     color: $color-background;
-    font-weight: 700;    
+    font-weight: 400;
+       
   
     &:hover {
       color: $color-button;
@@ -143,8 +143,8 @@
 
 #menu__toggle:checked ~ .burger__list {
   visibility: visible;
-  background-color: rgba( $color-btn-sign-in, 0.85);
-  border-radius: 8px;  
+  background-color: rgba($color-btn-sign-in, 1);
+  border-radius: 4px;  
 }
 
 #menu__toggle:checked ~ .menu__btn > span {

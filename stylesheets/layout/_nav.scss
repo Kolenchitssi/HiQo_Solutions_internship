@@ -161,7 +161,7 @@
   transform: rotate(90deg);
 }
 
-@media (max-width: 1400px) {
+@media (max-width: $screen-XXL) {
   .logo-text {
     margin-right: 12vw;
   }
@@ -171,7 +171,7 @@
   }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: $screen-XL) {
   .nav {
     justify-content: space-between;
   } 
@@ -190,7 +190,7 @@
   }
 }
 
-@media (max-width: 948px) {
+@media (max-width: $screen-L) {
   .nav {
     justify-content: space-between;
     
@@ -212,7 +212,7 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: $screen-small) {
    .wrapper .central-wrapper {
     margin: 0 10px;
   }

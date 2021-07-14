@@ -12,7 +12,8 @@
   background: $color-button;
   border: 0.5px solid $color-btn-sign-in-border; 
   border-color: $color-button;
-  border-style: solid; 
+  border-style: solid;
+  transition: background-color 0.1s ease-in; 
     
   &:hover {
     cursor: pointer;
@@ -27,7 +28,7 @@
     border: 1px solid $color-btn-sign-in-border;        
 
     &:hover {
-      box-shadow:(0 0 2px 1px $color-text-footer);
+      box-shadow: none;
       color: $color-button-text;
       background-color: $color-text-footer;
     }

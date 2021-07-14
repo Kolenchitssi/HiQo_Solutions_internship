@@ -7,70 +7,70 @@
   border-top: 1px solid $color-btn-sign-in-border;
 
   &__wrapper {
-      display: flex;
-      justify-content: flex-start;    
+    display: flex;
+    justify-content: flex-start;    
   }
   
   &__logo {
-      max-width: 205px;             
+    max-width: 205px;             
   }
   
   &__logo-text {
-      padding-top: 5px;
-      padding-left: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
   }
   
   &-first {
-      margin-left: 139px;
+    margin-left: 139px;
   }
   
   &-second {
-      margin-left: 140px;
-      margin-right: 82px;
+    margin-left: 140px;
+    margin-right: 82px;
   }
 
   &-link:hover {
-      text-decoration: underline;        
+    text-decoration: underline;        
   }
   
   &__nav {
-      max-width: 205px;       
-  
-      .footer__nav-list {            
-          padding-left: 0;
-      }
-  
-      .footer-link {
-          font-size: 16px;
-          line-height: 35px;
+    max-width: 205px;       
 
-          &-item {
-              color: $color-little-text;                
-          }
-      }      
-  
-      .nav__title {
-          @extend .footer-bold;
-          @include font-size-lh-color();            
-          margin-top: 0;
-          margin-bottom: 35px;           
-      }              
+    .footer__nav-list {            
+      padding-left: 0;
+    }
+
+    .footer-link {
+      font-size: 16px;
+      line-height: 35px;
+
+      &-item {
+        color: $color-little-text;                
+      }
+    }      
+
+    .nav__title {
+      @extend .footer-bold;
+      @include font-size-lh-color;            
+      margin-top: 0;
+      margin-bottom: 35px;           
+    }              
   }
 
   &__logo-img {
-      position: relative;
-      bottom: 3px;
-      right: 1px;
+    position: relative;
+    bottom: 3px;
+    right: 1px;
   }
   
   &__block-input {
-      max-width: 325px;
+    max-width: 325px;
   }
 }
 
 .input__title {
   @extend .footer-bold;
-  @include font-size-lh-color();       
+  @include font-size-lh-color;       
   margin: 0;
   max-width: 280px;
   margin-bottom: 32px;     
@@ -87,7 +87,113 @@
   padding: 15px;    
   
   &::placeholder {
-      color: $color-text-footer;
-      opacity: 0.9;
+    color: $color-text-footer;
+    opacity: 0.9;
   }    
+}
+
+@media (max-width: $screen-XL) {
+  .footer {
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    &__wrapper{
+        flex-wrap: wrap;             
+    }
+
+    &__nav{
+        margin: auto;
+    }   
+
+    .nav__title {                
+      margin-top: 0;
+      margin-bottom: 10px;               
+    }
+
+    &__nav-list {
+      margin-top: 0;
+    }
+
+    .footer-link {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    .input__title {
+      padding-top: 10px;
+      margin-bottom: 5px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media (max-width: $screen-L) {
+  .footer__wrapper {
+    display: grid;
+    justify-content: space-between;    
+    grid-template-areas: "nav1 nav2 tel"                         
+  }
+
+  .footer__logo {
+    display: none;
+  }
+
+  .footer-first {
+    grid-area: nav1;
+  }
+
+  .footer-second {
+    grid-area: nav2;
+  }
+
+  .footer__block-input {
+    grid-area: tel;    
+  }
+
+  .input__title {
+    display: none;
+  }
+
+  .telephone {
+    width: auto;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: $screen-small) { 
+  .footer__wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "nav1 nav2"
+                         "tel tel";                        
+  }
+  
+  .footer__nav {
+    max-width: 70vw;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .footer__block-input {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;    
+    margin: 0 auto;
+  }
+
+  .footer__button-sign-up {
+    margin-left: 4vw;
+    display: block;    
+  }
+}
+
+@media (max-width: $screen-XS) { 
+  .telephone {
+    max-width: 44vw;
+    padding: 2px;
+    max-height: 34px;
+  }
+  
+  footer .footer__button-sign-up {
+    font-size: 12px;
+  }
 }

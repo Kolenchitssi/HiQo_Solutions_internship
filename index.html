@@ -27,12 +27,30 @@
           <li class="nav__links-item"><a class="nav__links-link" href="#pricing">Pricng</a></li>
           <li class="nav__links-item"><a class="nav__links-link" href="#resources">Resources</a></li>
         </ul>
-        <button class="button button--secondary nav__button-sign-in">
-          Sign In
-        </button>
-        <button class="nav__button-sign-up button">
-          Sign Up
-        </button>
+
+        <div class="button__wrap">
+          <button class="button button--secondary nav__button-sign-in">
+            Sign In
+          </button>
+          <button class="nav__button-sign-up button">
+            Sign Up
+          </button>
+        </div>
+
+        <div class="burger">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <ul class="burger__list">
+            <li class="burger__item"><a class="burger__link" href="#product">Product</a></li>
+            <li class="burger__item"><a class="burger__link" href="#customers">Customers</a></li>
+            <li class="burger__item"><a class="burger__link" href="#pricing">Pricng</a></li>
+            <li class="burger__item"><a class="burger__link" href="#resources">Resources</a></li>
+            <li class="burger__item"><a class="burger__link" href="#pricing">Sign In</a></li>
+            <li class="burger__item"><a class="burger__link" href="#resources">Sign Up</a></li>
+          </ul>
+        </div>
       </nav>
 
       <header class="header">
@@ -58,7 +76,7 @@
 
       <section>
         <div class="design-tools__title" id="resources">
-          <h2>We design tools to unveil your superpowers</h2>
+          <h2 class="tools__title">We design tools to unveil your superpowers</h2>
         </div>
       </section>
     </div>
@@ -70,22 +88,22 @@
       <div class="central-wrapper">
 
         <div class="design-tools__wrapper">
-          <div class="card"> <img src="./assets/icons/icon1.svg" alt="logo-card" />
+          <div class="card"> <img src="./assets/icons/icon1.svg" alt="logo-card" class="card-image" />
             <h3 class="card-title">First click tests</h3>
             <p class="card-text">While most people enjoy casino gambling,</p>
           </div>
 
-          <div class="card"> <img src="./assets/icons/icon2.svg" alt="logo-card" />
+          <div class="card"> <img src="./assets/icons/icon2.svg" alt="logo-card" class="card-image" />
             <h3 class="card-title">Design surveys</h3>
             <p class="card-text">Sports betting, lottery and bingo playing for the fun</p>
           </div>
 
-          <div class="card"> <img src="./assets/icons/icon3.svg" alt="logo-card" />
+          <div class="card"> <img src="./assets/icons/icon3.svg" alt="logo-card" class="card-image" />
             <h3 class="card-title">Preference tests</h3>
             <p class="card-text">The Myspace page defines the individual.</p>
           </div>
 
-          <div class="card"> <img src="./assets/icons/icon4.svg" alt="logo-card" />
+          <div class="card"> <img src="./assets/icons/icon4.svg" alt="logo-card" class="card-image" />
             <h3 class="card-title">Five second tests</h3>
             <p class="card-text">Personal choices and the overall personality of the person. </p>
           </div>
@@ -120,13 +138,13 @@
             business that won’t cost you more money, </p>
         </div>
         <div class="characteristics__picture characteristics__picture--right">
-          <img src="./assets/img/characteristics-1.png" alt="design" />
+          <img src="./assets/img/characteristics-1.png" alt="design" class="characteristics__picture-image" />
         </div>
       </div>
 
       <div class="characteristics-row">
         <div class="characteristics__picture characteristics__picture--left">
-          <img src="./assets/img/characteristics-2.png" alt="design" />
+          <img src="./assets/img/characteristics-2.png" alt="design" class="characteristics__picture-image" />
         </div>
         <div class="characteristics__text">
           <p class="characteristics__paragraph"> Easier decision making for</p>
@@ -168,7 +186,7 @@
             more money, </p>
         </div>
         <div class="characteristics__picture characteristics__picture--end "><img
-            src="./assets/img/characteristics-3.png" alt="design" /></div>
+            src="./assets/img/characteristics-3.png" alt="design" class="characteristics__picture-image" /></div>
       </div>
 
       <section class="marketing-strategies" id="customers">
@@ -180,7 +198,7 @@
 
           <div class="marketing-strategies__ticket">
             <div class="ticket__picture">
-              <img src="./assets/img/ticket__picture1.png" alt="Positive Thinking" />
+              <img src="./assets/img/ticket__picture1.png" alt="Positive Thinking" class="ticket__picture-image" />
             </div>
             <div class="autor-article">
               <div class="autor-article__name">By <span class="boldtext">Abdullah</span></div>
@@ -193,7 +211,7 @@
 
           <div class="marketing-strategies__ticket">
             <div class="ticket__picture">
-              <img src="./assets/img/ticket__picture2.png" alt="Motivation" />
+              <img src="./assets/img/ticket__picture2.png" alt="Motivation" class="ticket__picture-image" />
             </div>
             <div class="autor-article">
               <div class="autor-article__name">By <span class="boldtext">Abdullah</span></div>
@@ -206,7 +224,7 @@
 
           <div class="marketing-strategies__ticket">
             <div class="ticket__picture">
-              <img src="./assets/img/ticket__picture3.png" alt="Success Steps" />
+              <img src="./assets/img/ticket__picture3.png" alt="Success Steps" class="ticket__picture-image" />
             </div>
             <div class="autor-article">
               <div class="autor-article__name">By <span class="boldtext">Abdullah</span></div>
